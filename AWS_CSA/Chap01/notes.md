@@ -6,6 +6,7 @@ public class HelloMultiverse {
     {
         System.out.println("Hello, Multiverse!");
     }
+}
 ```
 
 ## Variable vs. Capital Expense
@@ -29,4 +30,18 @@ public class HelloMultiverse {
 
 ##Focus on Business Differentiators
 
-  Cloud computing allows organizations to focus on their business
+  Cloud computing allows organizations to focus on their business priorities, instead of on the heavy lifting
+  of racking, stacking and powering servers. In this way organizations can *stop spending money on running and maintaining data centers*
+
+##Go Global in Minutes
+
+  Another advantage of cloud computing is the ability to *go global in minutes*. Organizations can easily deploy their applications to multiple locations around the world with a few clicks. This allows for redundancy across the globe and to deliver lower latency and better experiences to their customers at minimal cost. Cloud computing allows for smaller organizations/enterprises to go global.
+
+## Cloud Computing Deployment Models
+
+  The two primary cloud computing deployment models that the exam focuses on are "all in" cloud-based deployments and hybrid deployments. Understand how each strategy applies to architectural options and decisions.
+
+  An *all-in-cloud-based application* is fully deployed in the cloud with all components of the application running in the cloud. Applications in the cloud have either been created in the cloud or have been migrated from an existing infrastructure, monolithic on premise. The benefits of cloud based applications are that they can be built on low-level infrastructure pieces or can use higher-level services that provide abstraction from the management, architecting and scaling requirements of core infrastructure.
+
+  A *hybrid deployment* is a common approach taken by many enterprises that connects infrastructure and applications l
+
