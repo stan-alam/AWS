@@ -6,3 +6,4 @@ public class HelloMultiverse {
     {
         System.out.println("Hello, Multiverse!");
     }
+}
