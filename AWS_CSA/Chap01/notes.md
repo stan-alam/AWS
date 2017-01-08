@@ -33,7 +33,7 @@ public class HelloMultiverse {
   Cloud computing allows organizations to focus on their business priorities, instead of on the heavy lifting
   of racking, stacking and powering servers. In this way organizations can *stop spending money on running and maintaining data centers*
 
-##Go Global in Minutes
+## Go Global in Minutes
 
   Another advantage of cloud computing is the ability to *go global in minutes*. Organizations can easily deploy their applications to multiple locations around the world with a few clicks. This allows for redundancy across the globe and to deliver lower latency and better experiences to their customers at minimal cost. Cloud computing allows for smaller organizations/enterprises to go global.
 
@@ -43,5 +43,13 @@ public class HelloMultiverse {
 
   An *all-in-cloud-based application* is fully deployed in the cloud with all components of the application running in the cloud. Applications in the cloud have either been created in the cloud or have been migrated from an existing infrastructure, monolithic on premise. The benefits of cloud based applications are that they can be built on low-level infrastructure pieces or can use higher-level services that provide abstraction from the management, architecting and scaling requirements of core infrastructure.
 
-  A *hybrid deployment* is a common approach taken by many enterprises that connects infrastructure and applications l
+  A *hybrid deployment* is a common approach taken by many enterprises that connects infrastructure and applications between cloud-based resources and existing resources, typically in an existing data center. The most common method of hybrid deployment is between the cloud and existing on-premises infrastructure to extend and grow an organization's infrastructure while connecting cloud resources to internal systems. Choosing between an existing investment in infrastructure and moving to the cloud does not need to be a binary decision. Leveraging dedicated connectivity, identity federation, and integrated tools allows organizations to run hybrid applications across on-prem and cloud services.
+
+## AWS Fundamentals
+
+   At its core, AWS provides on-demand delivery of IT resources via the Internet on a secure services platform, offering compute power, storage, databases, and content delivery. ( along with other functionality ). Using AWS resources is like purchasing electricity from a company instead of generating your own. The advantages are: **Capacity exactly matches your need, you pay only for what you use, economies of scale result in lower costs, and the service is provided by vendor experienced in running large networks.**
+
+## Global Infrastructure
+
+
 
