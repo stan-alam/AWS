@@ -51,7 +51,7 @@ public class HelloMultiverse {
 
 ## Global Infrastructure
 
-   AWS locations around the world are composed of *regions and Availability Zones*. Each *region**  is **a separate geographical area. Each region has multiple, isolated locations known as AVAILABILITY ZONES. This achieves the greatest possible fault tolerance and stability. Each availability Zone is also isolated, but are connected to each other through low-latency links. AZ's are physically seperaeted within a typical metro region and are located in lower-risk flood plains ( specific flood categorization varies by region ) Also use UPS or uninterrupted power supply along with on site generators, this all to reduce single point of failure. They are also redundantly connected to multiple tier-1 transit providers.
+   AWS locations around the world are composed of *regions and Availability Zones*. Each *region*  is **a separate geographical area.** Each region has multiple, isolated locations known as **AVAILABILITY ZONES.** This achieves the greatest possible fault tolerance and stability. Each availability Zone is also isolated, but are connected to each other through low-latency links. AZ's are physically separated within a typical metro region and are located in lower-risk flood plains ( specific flood categorization varies by region ) Also use UPS or uninterrupted power supply along with on site generators, this all to reduce single point of failure. They are also redundantly connected to multiple tier-1 transit providers.
 
    By applying your app in more than one availability zone you can introduce redundancy.
 
@@ -62,4 +62,33 @@ public class HelloMultiverse {
 ## Security
 
     Cloud security at AWS is the number one priority
+
+   AWS manages the underlying infrastructure, and the organization can secure anything it deploys on AWS. This affords each organization the flexibility and agility they need in security controls.
+
+   This infrastructure is built and managed not only accordingly to security best practices and standards, but also with unique needs of the cloud in mind. **AWS uses redundant and layered controls, continuous validation and testing, and a substantial amount of automation to ensure that the underlying infrastructure is monitored and protected 24/7.**
+
+## Compliance
+
+   When customers move their production workloads to the AWS, both parties become responsible for managing the IT environment. Customers are responsible for setting up their environment in a secure and controlled manner. Customers also need to maintain adequate governance over their entire IT control environment. This insures audit friendly service features with applicable compliance or audit standards. AWS helps customers to build on traditional compliance programs.
+   This helps organizations establish and operate in an AWS security control environment.
+
+       Organizations retain complete control and ownership over the region in which their data is physically located,
+       allowing them to meet regional compliance and data residency requirements.
+
+   **The following is a partial list of AWS compliance:**
+
+   * SOC, Service Organization Controls International Standard on Engagements ( ISAE ) 3402, SOC 2, and SOC 3
+
+   * FISMA, Federal Information Security Management DoD Assurance Certification and Accreditation Process, DIACAP
+     Federal Risk and Authorization Management Program ( FedRAMP )
+
+    * Payment Card Industry Data security Standard ( PCI DSS ) Level 1
+
+    * International Organization for Standardization ( ISO ) 9001, ISO 27001, and ISO 27018
+
+
+
+
+
+
 
