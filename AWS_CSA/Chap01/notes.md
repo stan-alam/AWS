@@ -51,5 +51,7 @@ public class HelloMultiverse {
 
 ## Global Infrastructure
 
+   AWS locations around the world are composed of *regions and Availability Zones*. Each *region* **a separate geographical area. Each region has multiple, isolated locations known as AVAILABILITY ZONES. This achieves the greatest possible fault tolerance and stability. Each availability Zone is also isolated, but are connected to each other through low-latency links. AZ's are physically seperaeted within a typical metro region and are located in lower-risk flood plains ( specific flood categorization varies by region ) Also use UPS or uninterrupted power supply along with on site generators, this all to reduce single point of failure. They are also redundantly connected to multiple tier-1 transit providers.
 
+   By applying your app in more than one availability zone you can introduce redundancy.
 
