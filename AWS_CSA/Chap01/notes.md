@@ -107,6 +107,19 @@ public class HelloMultiverse {
 
    *AWS Direct Connect* allows organizations to establish a dedicated network connection from their data center to AWS. Using AWS Direct Connect, organizations can establish private connectivity between AWS and their data center, office, or collocation environment, which in many cases can deduce network costs, increase bandwidth throughput, and provide a more consistent network experience than Internet-based VPN connections.
 
-## Amazon
+## Amazon Route 53
+   *Route 53 is a highly available and scalable Domain Name System or **(DNS)** **webservice**. It is designed to give developers and businesses an extremely reliable and cost-effective way to route end users to Internet applications by translating human readable names, such *w(x3).example_dot_com*, into a numeric IP adresses, such as 192.0.21, that computers use to connect to each other. **Route 53** also serves as a domain registrar, allowing you to purchase and manage domains directly from AWS.
+
+## Storage and Contend Delivery
+
+  AWS provides a variety of storage services such as Amazon **Simple Storage Service**, **Amazon CloudFront**, and **Elastic Block Store**
+
+## (S3) Amazon Simple Storage Service
+
+   *Amazon Simple Storage Service or S3* provides developers and IT teams with highly durable and scalable object storage that handles virtually unlimited amounts of data and large numbers of concurrent users. Organizations can store any number of objects of any type, such HTML web pages, source code files, images, and encrypted data and access these objects by using HTTP-based protocols. This is a cost-effective way for organizations to backup and recover, nearline archive, big data analytics, disaster recovery, cloud apps, and content distribution.
+
+## Amazon Glacier
+
+   *Amazon Glacier* is a secure, durable and extremely low-cost storage service for data archiving and long-term backup. Organizations can reliably store
 
 
