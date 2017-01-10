@@ -101,8 +101,12 @@ public class HelloMultiverse {
 
 ## Amazon Virtual Private Cloud ( VPC )
 
-  **VPC** lets organizations provision a logically isolated section of the AWS Cloud where they can launch AWS resources a virtual network that they define. Organizations have complete control over the virtual environment, including selection of the IP address range, creation of subnets, and configuration of route tables and network gateways. In addition, organizations can extend their corporate data center networks to AWS by using hardware or software VPN connections or dedicated circuits by using AWS Direct Connect.
+  *VPC* lets organizations provision a logically isolated section of the AWS Cloud where they can launch AWS resources a virtual network that they define. Organizations have complete control over the virtual environment, including selection of the IP address range, creation of subnets, and configuration of route tables and network gateways. In addition, organizations can extend their corporate data center networks to AWS by using hardware or software VPN connections or dedicated circuits by using AWS Direct Connect.
 
+## AWS Direct Connect
 
+   *AWS Direct Connect* allows organizations to establish a dedicated network connection from their data center to AWS. Using AWS Direct Connect, organizations can establish private connectivity between AWS and their data center, office, or collocation environment, which in many cases can deduce network costs, increase bandwidth throughput, and provide a more consistent network experience than Internet-based VPN connections.
+
+## Amazon
 
 
