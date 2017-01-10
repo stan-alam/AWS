@@ -86,8 +86,22 @@ public class HelloMultiverse {
 
    * International Organization for Standardization ( ISO ) 9001, ISO 27001, and ISO 27018
 
+## Auto Scaling
 
+  *Auto Scaling* allows organizations to scale EC2 instances according to conditions defined by the particular workload.
+   Allows resources to scale in and out to match demands of dynamic workloads. Instead of provisioning for peak, organizations can optimize costs and use only the capacity needed.
 
+## Elastic Load Balancing
+
+   *Elastic Load Balancing* automatically distributes incoming application traffic across multiple EC2 instances in the cloud. This enables organizations to achieve greater levels of fault tolerance in their applications, seamlessly provided the required amount of load balancing capacity needed to distribute application traffic.
+
+## AWS Elastic BeanStalk
+
+   *Elastic BeanStalk* is the *fastest* and simple way to get a *web application* up and running on AWS. Developers can simply upload their application code, and the service automatically handles all the details, such as resource provisioning, load balancing, Auto Scaling and monitoring. It provides support for a variety of platforms, including PHP, Java, Python, Ruby, Node, .NET, and Go. With Elastic BeanStalk, organizations retain full control over the AWS resources powering the application and can access the underlying resources at any time.
+
+## Amazon Virtual Private Cloud ( VPC )
+
+  **VPC** lets organizations provision a logically isolated section of the AWS Cloud where they can launch AWS resources a virtual network that they define. Organizations have complete control over the virtual environment, including selection of the IP address range, creation of subnets, and configuration of route tables and network gateways. In addition, organizations can extend their corporate data center networks to AWS by using hardware or software VPN connections or dedicated circuits by using AWS Direct Connect.
 
 
 
