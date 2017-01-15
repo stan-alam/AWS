@@ -120,6 +120,25 @@ public class HelloMultiverse {
 
 ## Amazon Glacier
 
-   *Amazon Glacier* is a secure, durable and extremely low-cost storage service for data archiving and long-term backup. Organizations can reliably store
+   *Amazon Glacier* is a secure, durable and extremely low-cost storage service for data archiving and long-term backup. Organizations can reliably store large amounts of data where retrieval time of several hours is suitable. Amazon S3 integrates closely with Amazon Glacier to allow organizations to choose the right storage tier for their workloads.
 
+## Amazon Elastic Block Store aka (EBS)
+
+   **Amazon Elastic Block Store** provides persistent block-level storage volumes for use with Amazon EC2 instances. Each Amazon EBS volume is automatically replicated within its **Availability Zone** to protect organizations from component failure, offering high availability and durability. By delivering consistent and low-latency performance, Amazon EBS provides the disk storage needed to run a wide variety of workloads.
+
+## AWS Storage Gateway
+
+  **AWS Storage Gateway** is a service connecting an on-premises software appliance with cloud-based storage to provide seamless and secure integration between an organization's on-premises IT environment and the AWS storage infrastructure. The service supports industry-standard storage protocols that work with existing applications. It provides low-latency performance by maintaining a cache of frequently accessed data on-premises while securely storing all your data encrypted in Amazon S3 or Amazon Glacier.
+
+## Amazon CloudFront
+
+  **Amazon CloudFront** is a content delivery web service. It integrates with other AWS Cloud services to give developers and businesses an easy way to distribute content to users across the world with low latency, high data transfer speeds, and no minimum usage commitments. Amazon CloudFront can be used to deliver your entire website, including dynamic, static streaming, and interactive content, using a global network of edge locations. Requests for content are automatically routed to the nearest edge location, so content is delivered with the best possible performance to end users around the globe.
+
+## Database Services
+
+   AWS provides fully managed relational and NoSQL database services, and in-memory caching as a service and a petabyte-scale data warehouse solution. This section provides an overview of the products that the database services compromise.
+
+## Amazon Relational Database Service (AMAZON RDS)
+
+   **Amazon RDS** provides a fully managed relational database with support for many popular open source and commercial database engines. It's a cost-effective service that allows organizations to launch secure, highly available
 
