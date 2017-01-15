@@ -140,5 +140,32 @@ public class HelloMultiverse {
 
 ## Amazon Relational Database Service (AMAZON RDS)
 
-   **Amazon RDS** provides a fully managed relational database with support for many popular open source and commercial database engines. It's a cost-effective service that allows organizations to launch secure, highly available
+   **Amazon RDS** provides a fully managed relational database with support for many popular open source and commercial database engines. It's a cost-effective service that allows organizations to launch secure, highly available, fault-tolerant, production-ready databases in minutes. Because Amazon RDS manages time-consuming administration tasks, including backups, software patching, monitoring, scaling, and replication, organizational resources can focus on revenue-generating applications and business instead of mundane operational tasks.
+
+## Amazon DynamoDB
+
+   **Amazon Dynamo/DB** is a fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale. It is a fully managed database, and supports both document and key/value data models. Its flexible data model and reliable performance make it a great fit for mobile, web, gaming, ad-tech, Internet of things..etc.
+
+## Amazon Redshift
+
+  **Amazon Redshift** is a fast, fully managed, petabyte-scale data warehouse service that makes it simple and cost effective to analyze structured data. AWS RedShift provides a standard SQL interface that lets organizations use existing business intelligence tools. By leveraging columnar storage technology that improves I/O efficiency and parallelizes queries across multiple nodes, Amazon RedShift is able to deliver fast query performance. RedShift architecture allows orgs to automate most of the common admin tasks associated with provisioning, configuring and monitoring a cloud data-warehouse.
+
+## Amazon ElastiCache
+
+  **Amazon ElastiCache** is a webservice that simplifies deployment, operation and scaling of an in-memory cache in the cloud. The service improves the performance of web apps by allowing organizations to retrieve information from fast, managed, in memory caches, instead of relying entirely on **slower disk-based  databases**. As of now, ElastiCache Memcached and Redis cache engines.
+
+## Management Tools
+
+  **AWS provides a variety of tools that help organizations manage your AWS resources. The following section is an overview of these management tools.
+
+## Amazon CloudWatch
+
+  **Amazon CloudWatch** is monitoring service AWS Cloud resources and the applications running on AWS. It allows organizations to collect and track metrics, collect and monitor log files, and set alarms. By leveraging **Amazon CloudWatch**m organizations can react, as necessary, to keep applications running smoothly.
+
+## AWS CloudFormation
+
+
+
+
+
 
