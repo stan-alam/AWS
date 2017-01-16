@@ -222,6 +222,20 @@ public class HelloMultiverse {
 
 ## Amazon Simple Workflow Service ( Amazon SWF )
 
+  **Amazon SImple Workflow Service** helps developers build, run and scale background jobs that have parallel or sequential steps. SWF can be thought of as a fully managed state tracker and task coordinator on the cloud. In common architectural patterns, if your application's steps take more than 500 millaseconds to complete, it is vitally important to track the state of processing and to provide the ability to recover or retry if a task fails. Amazon SWF helps organizations achieve this reliability.
+
+## Amazon Simple Queue Service ( SQS )
+
+   **Amazon Simple Queue Service ( SQS ) is a fast, reliable, scalable, fully managed message queue service. Amazon SQS makes it simple and cost effective to decouple the components of a cloud application. With Amazon SQS, organizations can transmit any volume of data, at any level of throughput, without losing messages or requiring other services to be always available.
+
+## SUMMARY
+
+   **The term "cloud computing" refers to the on-demand delivery of IT resources via the Internet with pay-as-you-go pricing. Instead of buying, and maintaining data centers and servers, organizations can acquire technology such as computer power, storage, databases, and other services on a as-needed-bases. AWS maintains the technology infrastructure in a secure environment and businesses access these resources via the Internet to develop and run their applications. Capacity can grow or shrink instantly and businesses pay only for what they use**.
+
+
+
+
+
 
 
 
