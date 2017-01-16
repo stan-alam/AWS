@@ -26,14 +26,14 @@ public class HelloMultiverse {
   * Resource usage billed only as used.
 
 
-Pooled resources : Available to any subscribing users
+**Pooled resources** : Available to any subscribing users
 
-Virtualization :  High utilization of hardware assets
+**Virtualization** :  High utilization of hardware assets
 
-Elasticity    :  Dynamic scale without CAPEX
+**Elasticity**    :  Dynamic scale without CAPEX
 
-Automation     : Build, deploy, configure, provision, and move all without manual intervention
+**Automation**     : Build, deploy, configure, provision, and move all without manual intervention
 
-Metered Billing : Per-usage business model; pay only for what you use
+**Metered Billing** : Per-usage business model; pay only for what you use
 
 
