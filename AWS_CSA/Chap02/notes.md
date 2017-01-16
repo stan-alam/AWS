@@ -20,3 +20,19 @@
 
  * Disaster recovery
 
+Amazon provides **lifecycle policies** . By using lifecycle policies, you can have your data automatically migrate to the most appropriate storage class, without modifying your application code. In order to control who has access to your data, Amazon S3 provides a rich set of permissions, access controls, and encryption options.
+
+**Amazon Glacier** is another cloud storage service related to **Amazon S3** , but optimized for **data archiving and long-term backup** at an extremely low cost. Amazon Glacier is suitable for **cold data** which is data that is rarely accessed and for chich a retrieval time of three to five hours is acceptable. Amazon Glacier can be used both as a storage class of Amazon S3 and as an independent archival storage service.
+
+## Object Storage vs Traditional Block and File Storage
+
+File storage is a higher level on the presentational layer of the Operating System, i.e. files/folder directories, while **block storage** operates at a lower level, i.e. at the raw storage device level--and **the data is managed as a set of numbered, fixed-size blocks**. Both Block storage & file storage is that block storage is accessible over the a network in the form of a **Storage Area Network (SAN)** for block storage --> uses protocols such as **iSCSI** or **Fibre Channel** , or as a **Network File System (NFS)** Whether directly attached or network-attached, block or file, storage is very closely associated with the server and the OS that is using the storage.
+
+**Object Storage** as it pertains to S3 is **cloud object storage**
+
+      Instead of being closely associated with a server, AWS S3 storage is independent of a server
+      and is accessed over the Internet. Instead of managing data as block or files over SCSI, CIFS,
+      NFS protocols, data is managed as objects using an API built on CRUD ( HTTP verbs )
+
+
+ AWS S3 Object contains both **data and metadata** . Objects reside in **containers called** *buckets* , each object is then identified by a **unique user specified key (filename)** . Buckets
