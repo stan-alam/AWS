@@ -226,7 +226,7 @@ public class HelloMultiverse {
 
 ## Amazon Simple Queue Service ( SQS )
 
-   **Amazon Simple Queue Service ( SQS ) is a fast, reliable, scalable, fully managed message queue service. Amazon SQS makes it simple and cost effective to decouple the components of a cloud application. With Amazon SQS, organizations can transmit any volume of data, at any level of throughput, without losing messages or requiring other services to be always available.
+   **Amazon Simple Queue Service ( SQS )** is a fast, reliable, scalable, fully managed message queue service. Amazon SQS makes it simple and cost effective to decouple the components of a cloud application. With Amazon SQS, organizations can transmit any volume of data, at any level of throughput, without losing messages or requiring other services to be always available.
 
 ## SUMMARY
 
