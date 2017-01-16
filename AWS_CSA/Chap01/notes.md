@@ -164,6 +164,19 @@ public class HelloMultiverse {
 
 ## AWS CloudFormation
 
+   **AWS CloudFormation** gives developers and systems administrators an effective way to create and manage a collection of related AWS resources, provisioning, and updating them in an orderly and predictable fashion. AWS cloudFormation defines a **JSON-based** templating language that can be used to describe all the AWS resources that are necessary for a workload. Templates can be used to describe all AWS resources that are necessary for a workload. Templates can be submitted to AWS cloudFormation and the service will take care of the provisioning and configuring those resources in appropriate order.
+
+## AWS CloudTrail
+
+   **AWS CloudTrail** is a webservice that records AWS API calls for an account and delivers log files for audit and review. The recorded information includes the identity of the API caller, the time of the API call, and the source IP address of the API caller, the request parameters, and the response elements returned by the service.
+
+## AWS Config
+
+  ** AWS Config is a fully managed service that provides organizations with an AWS resource inventory, configuration history, and configuration change notifications to enable security and governance. With AWS Config, organizations can discover existing AWS resources, export an inventory of their AWS resources with all configuration details, and determine how a resource was configured at any point in time. These capabilities enable compliance auditing, security analysis, resource change tracking, and troubleshooting.
+
+
+
+
 
 
 
