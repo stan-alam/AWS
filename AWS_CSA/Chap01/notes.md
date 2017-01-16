@@ -214,7 +214,15 @@ public class HelloMultiverse {
 
 ## Amazon Simple Notification Service ( SNS )
 
-  **AWS SNS** is a web
+  **AWS SNS** is a web service that coordinates and manages the delivery or sending of messages to recipients. In Amazon SNS, there are two types of clients-publishers and subscribers -- also referred to as producers and consumers. Publishers communicate asynchronously with subscribers by producing and sending a message to a topic, which is a logical access point and communication channel. Subscribers consume or receive the message or notification over one of the supported protocols when they are subscribed to the topic.
+
+## Amazon Simple Email Service (Amazon SES)
+
+  **Amazon Simple Email Service** is a cost-effective email service that organizations can use to send transactional email, marketing messages, or any other type of content to their customers. Amazon SES can also be used **to receive messages and deliver them to an Amazon S3 bucket, call custom code via AWS Lambda function, or publish notifications to Amazon SNS.
+
+## Amazon Simple Workflow Service ( Amazon SWF )
+
+
 
 
 
