@@ -35,4 +35,8 @@ File storage is a higher level on the presentational layer of the Operating Syst
       NFS protocols, data is managed as objects using an API built on CRUD ( HTTP verbs )
 
 
- AWS S3 Object contains both **data and metadata** . Objects reside in **containers called** *buckets* , each object is then identified by a **unique user specified key (filename)** . Buckets
+ AWS S3 Object contains both **data and metadata** . Objects reside in **containers called** *buckets* , each object is then identified by a **unique user specified key (filename)** . Buckets are a **simple flat folder with NO FILE SYSTEM HIERARCHY
+ i.e. you can have multiple buckets, but you **can't have sub buckets within a bucket** **EACH BUCKET CAN HOLD AN UNLIMITED NUMBER OF OBJECTS**
+
+ Another way of thinking : The AWS S3 object ( or the data portion of an object ) as a file, and the key as the filename. Keep in mind that the S3 is highly divergent of the traditional file system. You will be using HTTP verbs to GET an object or PUT an object, **operating on the whole object at once** instead of incrementally updating portions of the objects as you would with a traditional file system. You can't "mount" a bucket, "open" an object, install an OS on S3 or run a database on it.
+
