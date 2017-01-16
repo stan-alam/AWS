@@ -154,9 +154,9 @@ public class HelloMultiverse {
 
   **Amazon ElastiCache** is a webservice that simplifies deployment, operation and scaling of an in-memory cache in the cloud. The service improves the performance of web apps by allowing organizations to retrieve information from fast, managed, in memory caches, instead of relying entirely on **slower disk-based  databases**. As of now, ElastiCache Memcached and Redis cache engines.
 
-## Management Tools
+    Management Tools
 
-  **AWS provides a variety of tools that help organizations manage your AWS resources. The following section is an overview of these management tools.
+    AWS provides a variety of tools that help organizations manage your AWS resources. The following section is an overview of these management tools.
 
 ## Amazon CloudWatch
 
@@ -172,7 +172,22 @@ public class HelloMultiverse {
 
 ## AWS Config
 
-  ** AWS Config is a fully managed service that provides organizations with an AWS resource inventory, configuration history, and configuration change notifications to enable security and governance. With AWS Config, organizations can discover existing AWS resources, export an inventory of their AWS resources with all configuration details, and determine how a resource was configured at any point in time. These capabilities enable compliance auditing, security analysis, resource change tracking, and troubleshooting.
+  **AWS Config** is a fully managed service that provides organizations with an AWS resource inventory, configuration history, and configuration change notifications to enable security and governance. With AWS Config, organizations can discover existing AWS resources, export an inventory of their AWS resources with all configuration details, and determine how a resource was configured at any point in time. These capabilities enable compliance auditing, security analysis, resource change tracking, and troubleshooting.
+
+    Security and Identity
+
+     AWS provides security and identity services that help organizations secure their data and systems on the cloud.
+
+## AWS Identity
+
+  **AWS Identity and Access Management (IAM)** enables organizations to securely control access to AWS Cloud services and resources for their users. Using IAM, organizations can create and manage AWS users and groups and use permissions to allow and deny their access to AWS resources.
+
+## AWS AWS Key Management Service (KMS)
+
+   **AWS Key Management Service(KMS)** is a managed service that makes it easy for organizations to create and control the encryption keys used to encrypt their data and uses **Hardware Security Models** (HSMs) to protect the security of your keys. AWS KMS is integrated with several other AWS Cloud services to help protect data stored with these services.
+
+
+
 
 
 
