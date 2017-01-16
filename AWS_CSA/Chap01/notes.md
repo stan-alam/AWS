@@ -182,10 +182,39 @@ public class HelloMultiverse {
 
   **AWS Identity and Access Management (IAM)** enables organizations to securely control access to AWS Cloud services and resources for their users. Using IAM, organizations can create and manage AWS users and groups and use permissions to allow and deny their access to AWS resources.
 
-## AWS AWS Key Management Service (KMS)
+## AWS Key Management Service (KMS)
 
    **AWS Key Management Service(KMS)** is a managed service that makes it easy for organizations to create and control the encryption keys used to encrypt their data and uses **Hardware Security Models** (HSMs) to protect the security of your keys. AWS KMS is integrated with several other AWS Cloud services to help protect data stored with these services.
 
+
+## AWS Directory Service
+
+   **AWS Directory Service** allows organizations to set up and run **Microsoft-Active-Directory** on the AWS Cloud or connect their AWS resource with an existing on-premises MS Active directory. Organizations can use it to manage users and groups, provide single sign-on to applications and services, create and apply Group Policies, domain join Amazon EC2 instances, and simplify the deployment and management of cloud-based Linux and Microsoft Windows workloads.
+
+
+## AWS Certificate Manager
+
+   **AWS Certificate Manager** is a service that lets organizations easily provision, manage, and deploy Secure Sockets Layer/ SSL/ TSL Transport Layer Security certificates for use with AWS Cloud services. It removes the time-consuming manual process of purchasing, uploading and renewing SSL/TSL certs. With **AWS Certifications Manager** , organizations can quickly request a certificate, deploy it on AWS resources such as **Elastic Load Balancing** or **Amazon CloudFront distributions** , and let AWS Certification Manager handle certificate renewals.
+
+## AWS Web Application FireWall ( WAF )
+
+   **WAF helps protect web applications from common attacks and exploits that could affect application availability, compromise security, or consume excessive resources. AWS WAF gives organizations control over which traffic to allow or block to their web applications by defining customizable web security rules.
+
+    Application Services
+
+    AWS provides a variety of managed services to use with applications.
+
+## Amazon API Gateway
+
+  **Amazon API Gateway** is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. Organizations can create an API that acts as a "front door" for applications to access data, business logic, or functionality from back-end services, such as workloads running on Amazon EC2, code running on **AWS Lambda** , or any web application. **Amazon API Gateway** handles all the tasks involved in accepting and processing up to a hundreds of thousands of concurrent API calls, including traffic management, authorization and access control, monitoring, and API version management.
+
+## Amazon Elastic transcoder
+
+  **Amazon Elastic transcoder** is media transcoding in the cloud. It is designed to be a highly scalable and cost-effective way for developers and businesses to convert (transcode) media files from their source formats into versions that will play back on devices such as smartphones, tablets and PCs.
+
+## Amazon Simple Notification Service ( SNS )
+
+  **AWS SNS** is a web
 
 
 
