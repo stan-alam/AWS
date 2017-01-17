@@ -54,6 +54,10 @@ A *Bucket* is a container ( web folder ) for objects ( files ) stored in S3. **E
         Best practice: to use bucket names that contain your domain name and conform to the rules for DNS names.
         This ensures that your bucket names are your own, can be used in all regions, and can host static websites.
 
+**AWS Regions**
+
+Although namespace for **AWS S3 is global** , each S3 bucket is created in a specific region that you choose. This allows you to control where the data is stored, e.g. Virginia / EAST, Oregon / West. It is best to choose a region closer to the customer/consumer of your services to reduce latency, or to satisfy data locality and sovereignty concerns or even located from your primary location to conserve disaster recovery scenarios. **data in an S3 bucket** is stored
+
 
 
 
