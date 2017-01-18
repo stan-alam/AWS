@@ -56,8 +56,70 @@ A *Bucket* is a container ( web folder ) for objects ( files ) stored in S3. **E
 
 **AWS Regions**
 
-Although namespace for **AWS S3 is global** , each S3 bucket is created in a specific region that you choose. This allows you to control where the data is stored, e.g. Virginia / EAST, Oregon / West. It is best to choose a region closer to the customer/consumer of your services to reduce latency, or to satisfy data locality and sovereignty concerns or even located from your primary location to conserve disaster recovery scenarios. **data in an S3 bucket** is stored
+Although namespace for **AWS S3 is global** , each S3 bucket is created in a specific region that you choose. This allows you to control where the data is stored, e.g. Virginia / EAST, Oregon / West. It is best to choose a region closer to the customer/consumer of your services to reduce latency, or to satisfy data locality and sovereignty concerns or even located from your primary location to conserve disaster recovery scenarios. **data in an S3 bucket** is stored in that region unless you **explicitly** copy it to another bucket in a another region.
 
+**Objects**
+
+  An object can store virtually any kind of data, think of an object as an "entity" in AWS. **Object can range in size from 0 bytes to 5 Teraybytes, and a single bucket can store an unlimited number of objects.** This means that Amazon S3 can store virtually unlimited amount of data.
+
+  An object consists of
+
+   * the data or the file itself
+
+   * data about the file, i.e metadata
+
+  Objects are not differentiated by type of data, i.e. data can be ascii or binary, AWS treats objects the same.
+
+  An object is treated object's data is treated as simply a stream of bytes -- Amazon S3 doesn't know or care what type of data you are storing.
+
+  **metadata of an AWS S3 object is a set of name/value pairs** There are two types of metadata:
+  1. System metadata
+  2. user metadata
+
+  System-metadata is created by AWS S3, while user data is optionally created by the user. **System metdata** consists of date last modified, object-size, MD5 digest and HTTP Content-Type. User data is optional, it is only specified at the time of the object is created. Users can custom metadata tags to their data with meaningful attributes.
+
+  **Keys**
+  Keys are used to identify an object in an S3 bucket. Every object has a key associated with it, i.e. the unique identifier, **a key can be up to 1024 bytes of Unicode UTF-8 characters, including embedded slashes, backslashes, dots, and dashes.
+
+  Keys must be unique within a single bucket, but different buckets can contain objects with the same key. The combination of bucket, key and optional version ID uniquely identifies an Amazon S3 Object.
+
+  **Object URL**
+
+  Amazon S3 is **storage for the Internet** and every AWS S3 object can be addressed by a specific unique URL formed using the Web services endpoint, the bucket name, the object key. For example, with the URL:
+
+  http://mybucket.s3.amazonaws.com/jack.doc
+
+ **mybucket** is the S3 bucket name, and jack.doc is the key or filename. If another object is created:
+
+ http://mybucket.s3.amazonaws.com/fee/fi/fo/fum/jack.doc
+
+ then the bucket name is **still my bucket** the key or file name is /fee/fi/fo/fum/jack.doc A key may contain delimiter characters like slashes or backslashes to help you name and logically organize your Amazon S3 objects, but to Amazon S3 it is simply **A long name in a flat namespace** There are no actual file and folder hierarchy.
+
+#.
+
+      For convenience, the S3 console and Prefix and delmiter feature allow you to navigate within an S3 bucket as if there were a folder hierarchy. Remember that a bucket is single flat namespace of keys with no structure.
+
+
+# REST Interface
+
+   The native interface for S3 is REST. You use standard HTTP(s) to interact with the REST interface and use CRUD. You will use CRUD to delete buckets, lists keys, and read and write objects.
+  Create PUT /sometimes POST, read is GET, and DELETE, update is POST ( or sometimes PUT )
+
+          Always use HTTPS for S3 API requests to ensure that your requests and data are secure
+
+
+  Most cases users use an Amazon SDK to interact with the REST interface instead of interacting with it directly. THE AWS SDK includes **wrapper libraries** for iOS, Android, JavaScript, Java, .NET, Node.js, PHP, Python, Ruby, GO, and C++ using the AWS CLI.
+
+           There i no support for SOAP, although the legacy http endpoints are available.
+
+
+# Durability and Availability
+
+**Data durability and availability are related but are different concepts**
+  Durability addresses the question, "Will my data still be there in the future?"
+  Availability addresses the question, "Can I access my data right now?" S3 provides both very high durability and very high availability for your data.
+
+Amazon S3 standard storage is designed for 99.999~ durability and 99.99% of availability of objects over a given year. The odds of storing 10k objects with S3 servers
 
 
 
