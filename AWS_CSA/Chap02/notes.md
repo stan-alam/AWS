@@ -102,7 +102,7 @@ Although namespace for **AWS S3 is global** , each S3 bucket is created in a spe
       Remember that a bucket is single flat namespace of keys with no structure.
 
 
-# REST Interface
+## REST Interface
 
    The native interface for S3 is REST. You use standard HTTP(s) to interact with the REST interface and use CRUD. You will use CRUD to delete buckets, lists keys, and read and write objects.
   Create PUT /sometimes POST, read is GET, and DELETE, update is POST ( or sometimes PUT )
@@ -115,13 +115,33 @@ Although namespace for **AWS S3 is global** , each S3 bucket is created in a spe
            There is no longer support for SOAP, although the legacy http endpoints are available.
 
 
-# Durability and Availability
+## Durability and Availability
 
 **Data durability and availability are related but are different concepts**
   Durability addresses the question, "Will my data still be there in the future?"
   Availability addresses the question, "Can I access my data right now?" S3 provides both very high durability and very high availability for your data.
 
-Amazon S3 standard storage is designed for 99.999~ durability and 99.99% of availability of objects over a given year. The odds of storing 10k objects with S3 servers expect to lose about a single object every 10 million years. S3 is achieves high durability by automatically storing data redundantly.
+Amazon S3 standard storage is designed for 99.999~ durability and 99.99% of availability of objects over a given year. The odds of storing 10k objects with S3 servers expect to lose about a single object every 10 million years. S3 is achieves high durability by automatically storing data redundantly on multiple decices in multiple facilities within a region. **it is designed to sustain the loss of data in two facilities without loss of user data.** Amazon S3 provides a highly durable storage infrastructure designed for mission critical and primary data storage.
+
+     S3 storage offers very high durability at the infrastructure level, it is still a best practice
+     to proectec against user-level accidental deletion or overwriting of data by using additional
+     features such as versioning, cross-region replication, and MFA-delete
+
+
+## Data Consistency
+
+Changes in data may take time to propagate through the system. ( data is eventually consistent ) Data is automatically replicated across servers. As a result there can be situations where information of which you read immediately after an update may return stale data.
+
+For PUTS to new objects, this is not a concern-- S3 provides read-after-write consistency. However, for PUTS to existing objects ( object overwrite to an existing key )and for object DELETEs, Amazon S3 provides *eventual consistency*
+
+**Eventual consistency means that if you PUT new data to an existing key, a subsequent GET might return old data. This also applies to DELETE an object, a subsequent GET may return for the deleted object. In all cases **updates for eventually consistent reads the developer will get the new data or the old data, but never inconsistent mix of data**
+
+
+## Access Control
+
+**Amazon S3 is secure by default** when you create a bucket or object in S3, only you have access. To allow you to give controlled access to others, Amazon S3 provides both course-grained access controls ( AWS S3 Access Controls List [ACLs], and fine-grained access controls ( Amazon S3 bucket policies, AWS identity and Acess Management or **AMI** policies, and query-string authentication))
+
+S3 Access Control or ACLs
 
 
 
