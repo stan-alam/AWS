@@ -119,7 +119,7 @@ Although namespace for **AWS S3 is global** , each S3 bucket is created in a spe
   Durability addresses the question, "Will my data still be there in the future?"
   Availability addresses the question, "Can I access my data right now?" S3 provides both very high durability and very high availability for your data.
 
-Amazon S3 standard storage is designed for 99.999~ durability and 99.99% of availability of objects over a given year. The odds of storing 10k objects with S3 servers
+Amazon S3 standard storage is designed for 99.999~ durability and 99.99% of availability of objects over a given year. The odds of storing 10k objects with S3 servers expect to lose about a single object every 10 million years. S3 is achieves high durability by automatically storing data redundantly.
 
 
 
