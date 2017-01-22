@@ -95,9 +95,11 @@ Although namespace for **AWS S3 is global** , each S3 bucket is created in a spe
 
  then the bucket name is **still my bucket** the key or file name is /fee/fi/fo/fum/jack.doc A key may contain delimiter characters like slashes or backslashes to help you name and logically organize your Amazon S3 objects, but to Amazon S3 it is simply **A long name in a flat namespace** There are no actual file and folder hierarchy.
 
-#.
+#
 
-      For convenience, the S3 console and Prefix and delmiter feature allow you to navigate within an S3 bucket as if there were a folder hierarchy. Remember that a bucket is single flat namespace of keys with no structure.
+      For convenience, the S3 console and Prefix and delmiter feature allow you to navigate within an S3 bucket
+      as if there were a folder hierarchy.
+      Remember that a bucket is single flat namespace of keys with no structure.
 
 
 # REST Interface
@@ -110,7 +112,7 @@ Although namespace for **AWS S3 is global** , each S3 bucket is created in a spe
 
   Most cases users use an Amazon SDK to interact with the REST interface instead of interacting with it directly. THE AWS SDK includes **wrapper libraries** for iOS, Android, JavaScript, Java, .NET, Node.js, PHP, Python, Ruby, GO, and C++ using the AWS CLI.
 
-           There i no support for SOAP, although the legacy http endpoints are available.
+           There is no longer support for SOAP, although the legacy http endpoints are available.
 
 
 # Durability and Availability
