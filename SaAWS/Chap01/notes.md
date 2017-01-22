@@ -30,12 +30,59 @@ SOA is an architecture that clearly conceptualized the idea that a system cab be
 
 Think of Microservices and serverless architectures as spiritual descendants of service-oriented architecture. They retain a lot of the aforementioned principles and ideas while attempting to address the complexity of old-fashioned SOA. A reconciliation of the past SOA ideas with practice.
 
-**Microservices are small, standalone, fully independent services built around a particular purpose or capability. A microservice may have an application tier with its own API and database.
+**Microservices are small, standalone, fully independent services built around a particular purpose or capability. A microservice may have an application tier with its own API and database.**
 
 
 SA does adopts some of the mantras of microservices, i.e for example, one can consider each function to be its own standalone service, with its own business purpose.
 
 ## Serviceless architecture gives the developer freedom to apply as few or as many microservices principles without forcing him/her to a single path.
+
+One of the solutions that SA tries to alleviate is the complexity arising from too many abstractions. Although layering allows developers to decouple concerns and have more maintainable applications. The converse is also true. **Too many moving parts** can lead to inefficiencies. **A small change can often cascade and cause the developer to modify every layer throughout the system** costing a lot of time and expenditure. The more layers there are the more complex and unwieldy the system might become over time.
+
+	SA tries to remove or minimize layers by breaking systems into functions and allowing the frontend
+	to securely communicate with services and even the database directly.
+
+One of the main emphasis for any developer is to find a balance in preventing spaghetti implementations, and dependacy nightmares by clearly defining service boundaries, allowing Lambda functions to be autonomous and planning how functions and services will interact.
+
+SA doesn't solve all problems and may not remove underlying intricacies of the system. When implemented correctly it can provide opportunities to
+   * reduce
+   * organize
+   * manage complexity
+It can also make future changes easier for a long term application.
+
+     Tiers vs Layers
+     A Tier is a module boundary that exists to provides isolation between major components of a system.
+     A presentation tier is visible to the user is separate from the application tier which encompasses
+     business logic. Data in a tier is another separate system that can manage, persist and provide
+     access to data. Components grouped in a tier can physically reside on different architecture.
+
+     Layers are logical slices that carry specific responsibilities in an application. Each tier can have
+     multiple layers within it responsible for different elements of functionality such as domain services.
+
+
+##Five Principles of Serverless Architectures
+
+
+   1. Use a compute service to execute code on demand ( no servers )
+   2. Write single-purpose stateless functions
+   3. Design push-based, even-driven pipelines
+   4. Create thicker, more powerful front ends
+   5. Embrace third-party services
+
+#1. SA is a natural extension of ideas raised in SOA
+
+  Developers can write functions to carryout almost any common task, such as reading and writing to a data source, calling other functions, and performing a calculation.
+
+       Lambda is a compute service that executes code written in JavaScript(node.js), Python or Java, and now
+       includes GOlang in AWS infrastructure
+       Source code is deployed to an isolated container that has its own allocation of memory, disk space,
+       and CPU. A lambda function is the combination of code, configuration and dependencies created by the
+       developer. The Lambda runtime can invoke a function multiple times in parallel. Lambda supports push
+       and pull event models of operation integrates with a large number of AWS services, Functions can
+       be invoked by an HTTP request through the API Gateway, or run on a scheduler.
+
+##MS AZURE, IBM Bluemix OpenWhisk, Google Cloud FUnctions are other compute services that compete with AWS lambda
+
 
 
 
