@@ -82,8 +82,11 @@ It can also make future changes easier for a long term application.
        and pull event models of operation integrates with a large number of AWS services, Functions can
        be invoked by an HTTP request through the API Gateway, or run on a scheduler.
 
-##MS AZURE, IBM Bluemix OpenWhisk, Google Cloud Functions are other compute services that compete with AWS lambda
+**MS AZURE, IBM Bluemix OpenWhisk, Google Cloud Functions are other compute services that compete with AWS lambda**
 
+##Single-purpose stateless functions
+
+   A good practice is to write functions with the **Single Responsibility Principle** ( SRP ) **A function that does just one thing is more testable, robust and leads to fewer bugs and unexpected side effects** By composing functions and services together in a loose orchestration, a developer can build complex back end systems that
 
 
 
