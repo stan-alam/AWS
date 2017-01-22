@@ -70,7 +70,7 @@ It can also make future changes easier for a long term application.
    4. **Create thicker, more powerful front ends**
    5. **Embrace third-party services**
 
-#1. SA is a natural extension of ideas raised in SOA
+#1.SA is a natural extension of ideas raised in SOA
 
   Developers can write functions to carryout almost any common task, such as reading and writing to a data source, calling other functions, and performing a calculation.
 
@@ -84,9 +84,20 @@ It can also make future changes easier for a long term application.
 
 **MS AZURE, IBM Bluemix OpenWhisk, Google Cloud Functions are other compute services that compete with AWS lambda**
 
-##Single-purpose stateless functions
+##2.Single-purpose stateless functions
 
-   A good practice is to write functions with the **Single Responsibility Principle** ( SRP ) **A function that does just one thing is more testable, robust and leads to fewer bugs and unexpected side effects** By composing functions and services together in a loose orchestration, a developer can build complex back end systems that
+   A good practice is to write functions with the **Single Responsibility Principle** ( SRP ) **A function that does just one thing is more testable, robust and leads to fewer bugs and unexpected side effects** By composing functions and services together in a loose orchestration, a developer can build complex back end systems that are still understandable and easy to manage. **A granular function with well-defined interface is also more likely to be re-used within an SA**
+   **All code written in Lambda must be stateless**
+
+**Stateless allows for scalability** quickly scale to handle an ever-changing number of incoming events or requests.
+
+
+##3. Design Push-based, Event-driven pipelines
+
+   Systems can be built from scratch or monolithic systems can be re-engineered to take advantage of SA.
+   **Event-Drive, Push-based pipeline to show how quickly a system can be put together, e.g. to encode video to different bitrates and formats**.
+
+
 
 
 
