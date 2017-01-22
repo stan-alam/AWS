@@ -35,7 +35,7 @@ Think of Microservices and serverless architectures as spiritual descendants of 
 
 SA does adopts some of the mantras of microservices, i.e for example, one can consider each function to be its own standalone service, with its own business purpose.
 
-## Service architecture gives the developer freedom to apply as few or as many microservices principles without forcing him/her to a single path.
+## Serviceless architecture gives the developer freedom to apply as few or as many microservices principles without forcing him/her to a single path.
 
 
 
