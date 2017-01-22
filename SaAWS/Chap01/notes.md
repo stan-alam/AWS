@@ -48,6 +48,7 @@ SA doesn't solve all problems and may not remove underlying intricacies of the s
    * reduce
    * organize
    * manage complexity
+
 It can also make future changes easier for a long term application.
 
      Tiers vs Layers
@@ -63,11 +64,11 @@ It can also make future changes easier for a long term application.
 ##Five Principles of Serverless Architectures
 
 
-   1. Use a compute service to execute code on demand ( no servers )
-   2. Write single-purpose stateless functions
-   3. Design push-based, even-driven pipelines
-   4. Create thicker, more powerful front ends
-   5. Embrace third-party services
+   1. **Use a compute service to execute code on demand ( no servers )**
+   2. **Write single-purpose stateless functions**
+   3. **Design push-based, even-driven pipelines**
+   4. **Create thicker, more powerful front ends**
+   5. **Embrace third-party services**
 
 #1. SA is a natural extension of ideas raised in SOA
 
@@ -81,7 +82,7 @@ It can also make future changes easier for a long term application.
        and pull event models of operation integrates with a large number of AWS services, Functions can
        be invoked by an HTTP request through the API Gateway, or run on a scheduler.
 
-##MS AZURE, IBM Bluemix OpenWhisk, Google Cloud FUnctions are other compute services that compete with AWS lambda
+##MS AZURE, IBM Bluemix OpenWhisk, Google Cloud Functions are other compute services that compete with AWS lambda
 
 
 
