@@ -95,7 +95,10 @@ It can also make future changes easier for a long term application.
 ##3. Design Push-based, Event-driven pipelines
 
    Systems can be built from scratch or monolithic systems can be re-engineered to take advantage of SA.
-   **Event-Drive, Push-based pipeline to show how quickly a system can be put together, e.g. to encode video to different bitrates and formats**.
+   **Event-Drive, Push-based pipeline to show how quickly a system can be put together, e.g. to encode video to different bitrates and formats**. This can be achieved by connecting to **Amazon's Simple Storage ( S3 ), Lambda and Elastic transcoder**.
+
+
+
 
 
 

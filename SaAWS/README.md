@@ -19,6 +19,9 @@ e.g. This project will implement the five pillars of Serverless Architecture.
    4. **Create thicker, more powerful front ends**
    5. **Embrace third-party services**
 
+The project will take advantage of **Amazon's Simple Storage( S3 ), Lambda and Elastic transcoder**.
+
+
 
 
 
