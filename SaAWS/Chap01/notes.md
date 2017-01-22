@@ -61,7 +61,7 @@ It can also make future changes easier for a long term application.
      multiple layers within it responsible for different elements of functionality such as domain services.
 
 
-##Five Principles of Serverless Architectures
+#Five Principles of Serverless Architectures
 
 
    1. **Use a compute service to execute code on demand ( no servers )**
@@ -84,7 +84,7 @@ It can also make future changes easier for a long term application.
 
 **MS AZURE, IBM Bluemix OpenWhisk, Google Cloud Functions are other compute services that compete with AWS lambda**
 
-##2.Single-purpose stateless functions
+#2.Single-purpose stateless functions
 
    A good practice is to write functions with the **Single Responsibility Principle** ( SRP ) **A function that does just one thing is more testable, robust and leads to fewer bugs and unexpected side effects** By composing functions and services together in a loose orchestration, a developer can build complex back end systems that are still understandable and easy to manage. **A granular function with well-defined interface is also more likely to be re-used within an SA**
    **All code written in Lambda must be stateless**
@@ -92,7 +92,7 @@ It can also make future changes easier for a long term application.
 **Stateless allows for scalability** quickly scale to handle an ever-changing number of incoming events or requests.
 
 
-##3. Design Push-based, Event-driven pipelines
+#3. Design Push-based, Event-driven pipelines
 
    Systems can be built from scratch or monolithic systems can be re-engineered to take advantage of SA.
    **Event-Drive, Push-based pipeline to show how quickly a system can be put together, e.g. to encode video to different bitrates and formats**. This can be achieved by connecting to **Amazon's Simple Storage ( S3 ), Lambda and Elastic transcoder**.
