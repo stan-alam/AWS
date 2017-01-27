@@ -96,6 +96,9 @@ It can also make future changes easier for a long term application.
 
    Systems can be built from scratch or monolithic systems can be re-engineered to take advantage of SA.
    **Event-Drive, Push-based pipeline to show how quickly a system can be put together, e.g. to encode video to different bitrates and formats**. This can be achieved by connecting to **Amazon's Simple Storage ( S3 ), Lambda and Elastic transcoder**.
+   **One of the advantages of building an event-driven, push-based system is that it will reduce cost and complexity ( a developer will not need to run extra code to poll for changes) and make UX smoother. event-driven, push-based may not be applicable to all circumstances. At times a lambda function may need to be implemented that polls the event source or runs on a schedule.
+
+
 
 
 
