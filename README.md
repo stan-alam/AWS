@@ -36,4 +36,30 @@ public class HelloMultiverse {
 
 **Metered Billing** : Per-usage business model; pay only for what you use
 
+#AWS- Concepts and Components
 
+AWS Global Infrastructure:
+
+   * AZ = DataCenter
+
+   * 12 regions and 33 AZ, possibly 11 more AZs added in 2016 [1]
+
+   * Region = 2 or more AZs
+
+   * Edge Location = CDN End Points for CloudFront
+
+Networking
+
+   * VPC = Virtual Private Server
+
+   * Direct Connect = connecting to AWS without using an Internet Connection
+
+   * Route53 = DNS service (port 53... duh!)
+
+Compute
+
+   * EC2 = virtual server
+
+   * EC2 Container Service = EC2 with Docker
+
+   * Elastic Beanstalk = Service for deploying web applications and services. "AWS for Beginners", if you will.
