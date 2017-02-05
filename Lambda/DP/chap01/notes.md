@@ -25,14 +25,11 @@ When you create a new function in Lambda, you choose a *function name*, create y
    * A role that describes what the function can do, and on which resources, using
    AWS identity and Assessment (IAM)
 
-
-
-
-
-..........
-
-        When you choose the amount of memory you want for your function, you're allocated proportional CPU power. For example, choosing 256mb of memory allocated approx. twice as much CPU power to your lambda function as would be requesting 128 MB of mem and half as much CPU power
-        as choosing 512 MB of memory.
+#
+     When you choose the amount of memory you want for your function, you're allocated proportional CPU power.
+     For example, choosing 256mb of memory allocated approx. twice as much CPU power to your lambda function
+     as would be requesting 128 MB of mem and half as much CPU power
+     as choosing 512 MB of memory.
 
 
 AWS Lambda implements the execution of those functions with an efficient use of the underlying computer resources that allows for an innovative cost model. **With AWS Lambda you pay for:**
@@ -76,7 +73,7 @@ def lambda_handler(event, context):
 
 ```
 
-Giving as input those functions an even with the following JSON would give back a result of 30:
+Giving as input those functions an event with the following JSON will give back a result of '30:'
 
 ```Javascript
 
