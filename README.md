@@ -146,10 +146,11 @@ public class HelloMultiverse {
           uses **"CloudFormer"** to create a template of existing infrastructure to capture and
           redeploy applications that are already running
 
-    * **CloudTrail** - track user & API activity
-        * By default, log files are stored indefinitely.
+ **CloudTrail** - track user & API activity
 
-    * **OpsWorks** - automation
+       * By default, log files are stored indefinitely.
+
+ **OpsWorks** - automation
 
          * Orchestration service that uses **Chef**
          * Chef consists of recipes to maintain a consistent state
@@ -158,7 +159,7 @@ public class HelloMultiverse {
          * **Trusted Advisor** - scans environment for ways to save money and increase security
 
 
-  * **Application Svcs**
+  **Application Svcs**
 
     * **API Gateway** (*not covered in exam)[2]
 
