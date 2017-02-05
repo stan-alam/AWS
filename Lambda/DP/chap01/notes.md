@@ -65,8 +65,6 @@ in Python:
 
 ```Python
 
-var name = "Darrick";
-
 def lambda_handler(event, context):
 	result = event['value1' + event['value2']
 	return result
