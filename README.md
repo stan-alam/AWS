@@ -36,6 +36,19 @@ public class HelloMultiverse {
 
 **Metered Billing** : Per-usage business model; pay only for what you use
 
+| Family 	| Specialty                      	|                      Use Case                     	|
+|--------	|-------------------------------	|:-------------------------------------------------:	|
+| T2     	| Lowest Cost,  General Purpose 	| Web server Small Database                         	|
+| M4     	| General Purpose               	| Applications                                      	|
+| M3     	| General Purpose               	| Applications                                      	|
+| C4     	| Compute Optimized             	| High CPU,  Applications Database                  	|
+| C3     	| Compute Opitimzed             	| High CPU,  Applications Database                  	|
+| R3     	| RAM Memory Optimized          	| for high mem applications                         	|
+| G2     	| Graphics                      	| Optimized for: video encoding, 3D Apps, Streaming 	|
+| I2     	| High Speed Storage (IOPS)     	| NoSQL, DBs, DataWarehousing                       	|
+| D2     	| Dense Storage                 	| File servers, Hadoop                              	|
+
+
 #AWS- Concepts and Components
 
 **AWS Global Infrastructure:**
