@@ -137,33 +137,33 @@ public class HelloMultiverse {
 
    * **Cloud HSM** - Hardware Security Model
 
-   * **Certificate Manager** ?
+**Certificate Manager** ?
 
-   * **Management Tools:**
+**Management Tools:**
 
-       * CloudWatch - Monitor
-       * CloudFormation - Use Templates to create infrastructure stacks
-          uses **"CloudFormer"** to create a template of existing infrastructure to capture and
-          redeploy applications that are already running
+   * CloudWatch - Monitor
+   * CloudFormation - Use Templates to create infrastructure stacks
+   uses **"CloudFormer"** to create a template of existing infrastructure to capture and
+   redeploy applications that are already running
 
- **CloudTrail** - track user & API activity
+**CloudTrail** - track user & API activity
 
-       * By default, log files are stored indefinitely.
+   * By default, log files are stored indefinitely.
 
- **OpsWorks** - automation
+**OpsWorks** - automation
 
-         * Orchestration service that uses **Chef**
-         * Chef consists of recipes to maintain a consistent state
-         * **Look for "chef", "recipes", "cookbook" in exam and remind yourself of OpsWorks**
-         * Service Catalog - (*not covered in exam) [2]
-         * **Trusted Advisor** - scans environment for ways to save money and increase security
+   * Orchestration service that uses **Chef**
+   * Chef consists of recipes to maintain a consistent state
+   * **Look for "chef", "recipes", "cookbook" in exam and remind yourself of OpsWorks**
+   * Service Catalog - (*not covered in exam) [2]
+    * **Trusted Advisor** - scans environment for ways to save money and increase security
 
 
-  **Application Svcs**
+**Application Svcs**
 
-    * **API Gateway** (*not covered in exam)[2]
+   * **API Gateway** (*not covered in exam)[2]
 
-    * **
+   * **
 
 
 
