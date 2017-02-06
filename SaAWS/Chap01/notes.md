@@ -66,7 +66,7 @@ It can also make future changes easier for a long term application.
 
    1. **Use a compute service to execute code on demand ( no servers )**
    2. **Write single-purpose stateless functions**
-   3. **Design push-based, even-driven pipelines**
+   3. **Design push-based, event-driven pipelines**
    4. **Create thicker, more powerful front ends**
    5. **Embrace third-party services**
 
