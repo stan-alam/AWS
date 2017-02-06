@@ -81,3 +81,5 @@ Giving as input those functions an event with the following JSON will give back 
 }
 
 ```
+
+Functions can also be called *asynchronously*. In such a case the call returns immediately
