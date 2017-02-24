@@ -34,8 +34,8 @@ When you create a new function in Lambda, you choose a *function name*, create y
 
 AWS Lambda implements the execution of those functions with an efficient use of the underlying computer resources that allows for an innovative cost model. **With AWS Lambda you pay for:**
 
-   * The number of invocations
-   * the hundreds of milliseconds of execution time of all invocations, depending on the memory given to the functions.
+   * **The number of invocations**
+   * **the hundreds of milliseconds of execution time of all invocations, depending on the memory given to the functions.**
 
 Free tier is the first one million invocations or the first 400,000 seconds of execution time with 1 GB of mem.
 

@@ -163,7 +163,32 @@ public class HelloMultiverse {
 
    * **API Gateway** (*not covered in exam)[2]
 
-   * **
+   * **AppStream** - AWS version of XenApp
+
+   * **CloudSearch** - Managed search solution
+
+   * **Elastic Transcoder** - Media transcoding service, change media files from source format to
+   destination format
+   * **SES** - Simple Email Service - sends/receive emails
+
+   * **SQS** - Simple Queue Service, a way of decoupling infrastructure
+
+   * **SWF** - Simple WorkFlow Service
+
+**Development Tools[ * Are not on test]**
+
+   * **CodeCommit** - Github
+
+   * **CodeDeploy** - automates code deployment
+
+   * **CodePipeline** - build, test, deploy code
+
+**Mobile Services(SNS is on the test, everything else is not)**
+
+  * **Mobile Hub** - test mobile apps
+
+  * **Cognito** - save mobile user data in AWS cloud
+
 
 
 
