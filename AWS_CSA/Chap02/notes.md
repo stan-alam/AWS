@@ -97,7 +97,7 @@ Although namespace for **AWS S3 is global** , each S3 bucket is created in a spe
 
 #
 
-      For convenience, the S3 console and Prefix and delmiter feature allow you to navigate within an S3 bucket
+      For convenience, the S3 console and Prefix and delimiter feature allow you to navigate within an S3 bucket
       as if there were a folder hierarchy.
       Remember that a bucket is single flat namespace of keys with no structure.
 
@@ -105,7 +105,7 @@ Although namespace for **AWS S3 is global** , each S3 bucket is created in a spe
 ## REST Interface
 
    The native interface for S3 is REST. You use standard HTTP(s) to interact with the REST interface and use CRUD. You will use CRUD to delete buckets, lists keys, and read and write objects.
-  Create PUT /sometimes POST, read is GET, and DELETE, update is POST ( or sometimes PUT )
+   Create PUT /sometimes POST, read is GET, and DELETE, update is POST ( or sometimes PUT )
 
           Always use HTTPS for S3 API requests to ensure that your requests and data are secure
 
@@ -141,8 +141,65 @@ For PUTS to new objects, this is not a concern-- S3 provides read-after-write co
 
 **Amazon S3 is secure by default** when you create a bucket or object in S3, only you have access. To allow you to give controlled access to others, Amazon S3 provides both course-grained access controls ( AWS S3 Access Controls List [ACLs], and fine-grained access controls ( Amazon S3 bucket policies, AWS identity and Acess Management or **AMI** policies, and query-string authentication))
 
-S3 Access Control or ACLs
+S3 Access Control or ACLs allow to grant certain coarse-grained permissions, such as **READ**, **WRITE**, or **FULL CONTROL** at the object or bucket level. ACLS are a legacy access control mechanism, created before IAM existed. ACLs are best used today for limited set of uses cases, such as enabling bucket logging or making a bucket that hosts a static website to readable.
 
+Amazon S3 bucket policies are the recommend access control mechanism, for AWS S3 and provide much finer-grained control. AWS s3 bucket policies are very similar to IAM policies.
+
+ * They are associated with the bucket resource instead of an IAM principal.
+
+  * They include an explicit reference to the IAM principal policy. This principal can be associated with a different AWS account, so AWS S3 bucket policies allow you to assign cross-account access to AWS s3 resources.
+
+From IAM policies you can specify who can access the bucket, from where (by Classless Inter-Domain Routing, CIDR block or by IP address) and during what time of day.
+
+IAM policies may be associated directly with IAM principals that grant access to an AWS s3 bucket, just as it can grant access to any AWS service and resource.
+**you can only assign IAM policies to principals in AWS accounts that you control**.
+
+##Static Website Hosting
+
+A very common use case for s3 storage is *static website* hosting. Websites particularly micro-sites, don't need the services of a full web server. A static site just needs content that does not require server-side processing -- PHP, ASP. JSP* this does not mean it can't be interactive/dynamic.
+Static sites are fast, svalable and can be more secure than typical dynamic sites. S3 provides security, durability, availability and scalability.
+
+S3 has a URL it is easy to turn a bucket into a website. To host static website, you configure a bucket for website hosting:
+
+1. Create a bucket with the same name as the desired website hostname.
+
+2. Upload the static files to the bucket
+
+3. Make all the files public (world readable)
+
+4. Enable static website hosting for the bucket. This includes specifying an Index document and an Error doc.
+
+5. The website will be available at the s3 website url
+
+           <bucket-name>.s3-website-<AWS-region>.amazonaws.com.
+
+ 6. Create a user friendly DNS name in your own domain for the website using a DNS, CNAME, or an Amazon Route 53 alias that resolves to the S3 website URL
+
+ 7. The website will be available at your website domain name.
+
+##AWS S3 advanced features
+
+Some s3 stuff you should be familiar with
+
+**Prefixes and Delimiters**
+
+While S3 uses flat structure in a bucket, it supports the use of *prefix* and *delimiter* parameters when listing key names. This feature lets you organize, browse, and retrieve the obejcts within a bucket hierarchically. Typically, you would use a slash (/) or backslash( \ ) as a delimiter and then use key names with embedded delimiters to emulate a file and folder hierarchy within the flat object key namespace of a bucket.
+
+e.g. logs/2017/January/server420.log
+/logs/2017/February/server420.log
+logs/2017/March/server420.log
+
+..etc..
+
+The REST API, wrapper SDK, AWS CLI and the Amazon Management Console all support the use of delimiters and prefixes. This allows for logically organized new data structured into an easily maintainable hierarchical folder-and-file structure of existing data uploaded or backed up from traditional file systems. Used together with IAM or Amazon S3 bucket policies, prefixed & delimiters an equivalent of subdirectories, home directories etc. **This not really a file system**.
+
+## Storage classes
+
+ASW S3 offers a range of *storage classes* suitable for various use cases.
+
+**S3** Standard offers high durability, hight availablity, low latency and high performance object storage for general purpose use. It delivers low first-byte latency and high throughput, Standard is well-suited for short-term storage of frequently accessed data. For general cases, S3 Standard is the place to start.
+
+**S3 Standard -Infrequent Access (Standard-IA)** offers the same durability, low latency, and high throughput as S3 standard, but is designed for long-lived, less frequently accessed data. **Standard-IA** has a lower per GB-month storage cost than Standard, but the price model also includes a minimum object size (128 KB), min duration of 30 days and per GB retrieval costs, so it is best suited for infrequently accessed data that is stored for longer than 30 days.
 
 
 
