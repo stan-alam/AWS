@@ -189,6 +189,52 @@ public class HelloMultiverse {
 
   * **Cognito** - save mobile user data in AWS cloud
 
+  * **Device Farm** - test against real smartphones, and tablets in AWS cloud
+
+  * **Mobile Analytics** - measure app usage and app revenue. track key trends, new users vs returning users..make data driven decisions for engagement and cash/money
+
+  * **SNS** * Simple notification service, Very important topic on the exam!
+
+**Enterprise Applications**
+
+  * **Workspaces* ** - virtual desktops (VDI) infrastructure
+  - they replace windows pc in the cloud with (PCoIP)
+  - run windows 7, provided by windows server 2008 R2
+  - Are persistent (EBS)
+  - all data on D drive backed up every 12 hours
+  - Do not need AWS account to login to workspaces
+  - Don't need an existing AD domain, can use free client app
+  - can integrate with existing AD domain
+  - by default: - users can personalize their workspace with wallpaper, icons..shortcuts ..etc
+                - users have local admin access to install apps
+
+  * **WorkDocs** - dropbox for enterprise
+
+  * **workMail** - exchange
+
+**Internet of Things ( not covered in test )**
+
+## Identity Access Management IAM
+
+  * central control of AWS account
+  * Shared access
+  * granular permissions of accounts/groups/roles/policies
+  * Identity Federation (AD, Facebook social media sites, linkedIN etc..)
+  * MFA - multi Factor authentication
+  * Temp access for users/devices/services
+  * Pwd rotation policy highly customizable
+  * Policies - JSON key/value pairs
+  * IAM is universal, **applies to all regions consistently**
+  * New users have no permissions when 1st created
+  new users are assigned an access key ID and secret access key when first created, which is only viewable once - **download it**
+  *Always setup MFA on root, i.e multifactor authentication
+  * integrate with AWS marketspace
+
+## S3
+
+  * Secure, durable, highly scalable object storage. "Unlimited storage." A hard drive in the cloud ( if you will )
+
+
 
 
 
