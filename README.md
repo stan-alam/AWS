@@ -228,11 +228,41 @@ public class HelloMultiverse {
   * New users have no permissions when 1st created
   new users are assigned an access key ID and secret access key when first created, which is only viewable once - **download it**
   *Always setup MFA on root, i.e multifactor authentication
-  * integrate with AWS marketspace
+  * integrate with AWS marketplace
 
 ## S3
 
   * Secure, durable, highly scalable object storage. "Unlimited storage." A hard drive in the cloud ( if you will )
+
+  * Object based NOT block based storage ( no OS or Database -> that's elastic Block storage (EBS)) allows you to upload files
+
+  * You can upload anywhere from 0 bytes to 5 terabytes
+
+  * Files are stored in buckets
+
+  * S3 is a universal namespace, each namespace must be unique
+
+   http://<bucket>.s3-aws-region.amazonaws.com
+   http://s3-aws-region.amazonaws.com/<bucket>
+
+  * Read after wrote consistency for PUTS of new Objects
+
+  * Eventually consistency for overwrite PUTS and DELETES, takes time to propagate
+
+  * S3 - Object based
+
+  * **Objects consist of:**
+    **key is the name of the object**
+
+    **Value is the data**
+
+    **Version ID** (for versioning)
+
+    **Metadaa(tags)**
+
+    **Subsresources**
+
+    **Access Control Lists(ACLs)**
 
 
 
