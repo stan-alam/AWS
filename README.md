@@ -193,7 +193,7 @@ public class HelloMultiverse {
 
   * **Mobile Analytics** - measure app usage and app revenue. track key trends, new users vs returning users..make data driven decisions for engagement and cash/money
 
-  * **SNS** * Simple notification service, Very important topic on the exam!
+  * **SNS** **Simple notification service, Very important topic on the exam!**
 
 **Enterprise Applications**
 
