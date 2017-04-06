@@ -10,3 +10,6 @@ Traditional web apps assume that the server is an essential part of the system. 
 The web portion of the app is the interface to the back end, including some of the navigating aspects. The traditional approach is called the *n-tier architecture*, i.e the browser, the application server, and the one or more back end services makeup the tiers in the system.
 
 **The serverless approach** You can remove all the tiers. Instead of treating the web clients as the interface to the application server, you can move the application logic into the browser by building a single page application. **You can server your application from a simple static web host- nothing more than a delivery mechanism for the application, while the browser acts as an application container**. The resulting design removes the middlemen from traditional web applications architectures and allows the browser to directly connect to any services that it needs.
+
+Libs used for the project : Normalize CSS reset,  which ensures base style in the same across all browsers.
+
