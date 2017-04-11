@@ -197,9 +197,34 @@ The REST API, wrapper SDK, AWS CLI and the Amazon Management Console all support
 
 ASW S3 offers a range of *storage classes* suitable for various use cases.
 
-**S3** Standard offers high durability, hight availablity, low latency and high performance object storage for general purpose use. It delivers low first-byte latency and high throughput, Standard is well-suited for short-term storage of frequently accessed data. For general cases, S3 Standard is the place to start.
+**S3** Standard offers high durability, hight availability, low latency and high performance object storage for general purpose use. It delivers low first-byte latency and high throughput, Standard is well-suited for short-term storage of frequently accessed data. For general cases, S3 Standard is the place to start.
 
 **S3 Standard -Infrequent Access (Standard-IA)** offers the same durability, low latency, and high throughput as S3 standard, but is designed for long-lived, less frequently accessed data. **Standard-IA** has a lower per GB-month storage cost than Standard, but the price model also includes a minimum object size (128 KB), min duration of 30 days and per GB retrieval costs, so it is best suited for infrequently accessed data that is stored for longer than 30 days.
+
+
+**Amazon S3 Reduced Redundancy Storage ( RRS )** offers slightly lower durability ( 4 nines ? ) than Standard-IA at a reduced cost. It is most appropriate for derived data that can be easily reproduced, such as **image thumbnails**
+
+**Amazon Glacier** storage class offers secure, durable, and extremely low-cost cloud storage for data that does not require real-time access, such as archives and long-term backups. To keep costs low, Amazon Glacier is optimized for infrequently accessed data where a retrieval time of several hours is suitable. To retrieve an Amazon Glacier object, you issue a restore command using one of the Amazon S3 APIs. **3 - 5 hours later , the amazon glacier object is copied to AWS S3 RRS** The original data object remains in AWS glacier until explicitly deleted. Also **AWS Glacier allows you to retrieve up to 5% of the Amazon S3 data stored in Amazon Glacier for free each month**
+
+Glacier can also act as a storage tier in AWS S3, AWS Glacier is also a standalone storage service with a separate API and unique characteristics. However, when use Amazon Glacier as a storage class of Amazon S3, you can always interact with the data via AWS S3.
+
+Using S3 lifecycle configuration rules, you can significantly reduce your storage costs by automatically transitioning data from one storage class to another or even automatically deleting data after a period of time. e.g. the lifecycle rules for backup data might be:
+
+  * Store backup data initially AWS S3 standard
+
+  * After 30 days, transition to AWS Standard-I-A
+
+  * After 90 days, transition to Amazon Glacier.
+
+  * After 3 years, delete.
+
+Life Cycle configurations are attached to the bucket and can apply to all objects in the bucket or only to objects specified by a prefix.
+
+##Encryption
+
+All sensative data stored in AWS S3 be encrypted, both in storage and in the pipeline.
+
+To encrypt S3 data at rest, you can use several variations of **Server-Side Encyption (SSE)**. Amazon S3 encrypts your data at the object level as it writes it to disks  in its data centers and decrypts it for you when you access it. All SSE performed
 
 
 
