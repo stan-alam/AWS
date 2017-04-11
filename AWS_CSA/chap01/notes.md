@@ -156,7 +156,8 @@ public class HelloMultiverse {
 
     Management Tools
 
-    AWS provides a variety of tools that help organizations manage your AWS resources. The following section is an overview of these management tools.
+    AWS provides a variety of tools that help organizations manage your AWS resources.
+    The following section is an overview of these management tools.
 
 ## Amazon CloudWatch
 

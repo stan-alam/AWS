@@ -154,6 +154,8 @@ From IAM policies you can specify who can access the bucket, from where (by Clas
 IAM policies may be associated directly with IAM principals that grant access to an AWS s3 bucket, just as it can grant access to any AWS service and resource.
 **you can only assign IAM policies to principals in AWS accounts that you control**.
 
+#
+
 ##Static Website Hosting
 
 A very common use case for s3 storage is *static website* hosting. Websites particularly micro-sites, don't need the services of a full web server. A static site just needs content that does not require server-side processing -- PHP, ASP. JSP* this does not mean it can't be interactive/dynamic.
