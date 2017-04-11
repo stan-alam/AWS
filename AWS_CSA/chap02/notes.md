@@ -156,7 +156,7 @@ IAM policies may be associated directly with IAM principals that grant access to
 
 #
 
-##Static Website Hosting
+## Static Website Hosting
 
 A very common use case for s3 storage is *static website* hosting. Websites particularly micro-sites, don't need the services of a full web server. A static site just needs content that does not require server-side processing -- PHP, ASP. JSP* this does not mean it can't be interactive/dynamic.
 Static sites are fast, svalable and can be more secure than typical dynamic sites. S3 provides security, durability, availability and scalability.
@@ -179,7 +179,7 @@ S3 has a URL it is easy to turn a bucket into a website. To host static website,
 
  7. The website will be available at your website domain name.
 
-##AWS S3 advanced features
+## AWS S3 advanced features
 
 Some s3 stuff you should be familiar with
 
@@ -224,25 +224,25 @@ Life Cycle configurations are attached to the bucket and can apply to all object
 
 #
 
-##Encryption
+## Encryption
 
 All sensitive data stored in AWS S3 be encrypted, both in storage and in the pipeline.
 
 To encrypt S3 data at rest, you can use several variations of **Server-Side Encryption (SSE)**. Amazon S3 encrypts your data at the object level as it writes it to disks  in its data centers and decrypts it for you when you access it. All SSE performed by Amazon S3 and AWS Key Management Service  ( Amazon KMS ) uses the 256-bit Advanced Encryption Standard (AES )You can also encrypt your s3 data at rest using **Client-Side Encryption** encrypting your data on the client before sending it to S3.
 
-##SSE-S3 (AWS-Managed Keys)
+## SSE-S3 (AWS-Managed Keys)
 
 This is a fully integrated checkbox style encryption solution where AWS handles the key management and key protection for S3. Every object is encrypted with a unique key. **The actual object key itself is then further encrypted by a separate master key**. A new master key is issued at least monthly, with AWS rotating the keys.  All these keys of which include Encrypted Data, encryption keys, and master keys are stored separately on secure hosts. This further enhances security.
 
-##SSE-S3 (AWS-Managed Keys)
+## SSE-S3 (AWS-Managed Keys)
 
 This is a fully integrated solution where Amazon handles your key management and protection for S3, but where you manage the keys. SSE-KMS offers several additional benefits compared to SSE-S3. Using SSE-KMS, there are separate permissions for using the master key, which provide protection against unauthorized access to your objects stored in S3 and an additional layer of control. AWS KMS also provides auditing, so you can see who used your key and when they tried to access the object. AWS KMS also allows you to view any failed attempts to access data from users who did not have permission to decrypt the data.
 
-##SSE-C ( Customer provided Keys )
+## SSE-C ( Customer provided Keys )
 
 This is used when you wish to manage your own keys but do not want to manage or implement your own client-side encryption library. With SSE-C, AWS will do the encryption/decryption of your objects while you maintain full control of the keys used to encrypt/decrypt the objects in S2.
 
-##Client-Side Encryption
+## Client-Side Encryption
 
 Client-side encryption refers to encrypting data on the client side of your application before sending to S3. THe two options available are:
 
