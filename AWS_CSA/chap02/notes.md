@@ -300,6 +300,63 @@ but can be easily enabled. The source bucket is where you will log from, the tar
     It is a best practice to specify a prefix, such as logs/ or yourbucketname/logs/, so
     that you can more easily find ( identify )your logs.
 
+Logs are delivered on a best-effort with a slight delay. Logs include information such as:
+
+    * Requestor account and IP address
+
+    * Bucket name
+
+    * Request time
+
+    * Action ( GET, PUT, LIST, and so forth )
+
+    * Response status or error code
+
+## Event Notifications
+
+S3 event notifications can be sent in response to actions taken on objects ( **reactive** ) in response to actions taken on objects uploaded or stored in S3. Event notifications enable you to run workflows, send alerts, or perform other actions in response to changes in your objects in S3. Use S3 event notifications to set up triggers to perform actions, such as transcoding media files when they are uploaded, processing data files when they become available, and sync amazon s3 objects with other data stores.
+
+## Best Practices, Patterns and Performance
+
+It is common pattern to use S3 storage in hybrid IT environments and applications. e.g. **data in on-premises, databases and compliance archives can be easily be backed over the Internat to Amazon S3 or Amazon Glaciers, while the primary application or database storage remains on-premises**.
+
+**Another common pattern is to use S3 for bulk "blob" storage for data, while keeping an index to that data in another service, such as DynamoDB or Amazon RDS. This allows quick searches and complex queries on key names without listing keys continually**.
+
+S3 will scale automatically to support very high request rates, automatically re-partioning buckets as needed. **If requests higher than 100 requests per second -- view Amazon S3 best practices guidelines in the Developer Guide**.
+
+    To ensure higher request rates, use some level of random distribution of keys,
+    e.g using hash as a prefix to key names.
+
+    If using S3 in a GET-intensive mode such as a static website hosting, for
+    best performance use an Amazon CloudFront distribution as a caching layer
+    in front of the S3 bucket.
+
+# Amazon Glacier
+
+Glacier is an extremely low-cost storage service that provides durable, secure and flexible storage for data arching and online backup. Designed for infrequent access where retrieval time of 3 to 5 hours is expected.
+Glacier can store virtually any type of data, in any format. Like the old tapes of yesteryear. TAR, or ZIP
+
+Glacier is as durable storing data on multiple devices across multiple facilities in a region. is designed for 99.9999999~% durabilty of objects over a given year.
+
+## Archives
+
+In Glacier, data is stored in **archives*. An archive can contain up to **40TB**. You can use an unlimited amount of archives. Archives are automatically encrypted and archives are immutable --after an archive is created, it cannot be modified.
+
+## Vaults
+
+**Vaults** are containers for archives. An AWS account can store up to 1,000 vaults. Control to the vaults is provisioned by IAM policies. **Identity and Access Management** or **Vault Access Policies**.
+
+## Vault Locks
+
+Use Vault locks to deploy and enforce compliance controls for individual Amazon Glacier vaults with a **vault lock policy**. To specify controls such as **Write Once Read Many** **WORM** in a vault policy and lock the policy from future edits. __Once locked, the policy can no longer be changed__
+
+## Data Retrieval
+
+
+
+
+
+
 
 
 
