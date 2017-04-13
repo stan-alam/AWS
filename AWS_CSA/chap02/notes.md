@@ -270,7 +270,16 @@ Adds another layer of data protection on top of bucket versioning. MFA delete re
 
 ## Multipart Upload
 
-To better support uploading or copying of large objects,
+S3 provides **Multi Upload API** for supporting uploading or copying of large objects. By piecewise uploads you will be able to take advantage of parallel uploading and save time, and better network utilization. S3 then assembles the parts in order to create an object.
+
+**YOU should use MU when uploading objects larger than 100 Mbytes, you must use multipart upload for objects larger than 5GB.** When using the low-level APIs, you must break the file to be uploaded into parts and keep track of the parts. But when using the low-level APIs, you must break the file to be uploaded into parts and keep track of the parts. When using the high-level APIs and the high level- Amazon S3 commands in the AWS CLI ( aws s3 cp, aws, s3, mv, aws s3 sync) multipart upload is automatically performed for large objects.
+
+
+    You can set an object lifecycle policy on a bucket to abort incomplete multipart
+    uploads after a specified number of days. This will minimize the storage costs
+    associated with multipart uploads that were not completed.
+
+
 
 
 
