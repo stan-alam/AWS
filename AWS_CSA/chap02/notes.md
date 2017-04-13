@@ -154,7 +154,9 @@ From IAM policies you can specify who can access the bucket, from where (by Clas
 IAM policies may be associated directly with IAM principals that grant access to an AWS s3 bucket, just as it can grant access to any AWS service and resource.
 **you can only assign IAM policies to principals in AWS accounts that you control**.
 
-##Static Website Hosting
+#
+
+## Static Website Hosting
 
 A very common use case for s3 storage is *static website* hosting. Websites particularly micro-sites, don't need the services of a full web server. A static site just needs content that does not require server-side processing -- PHP, ASP. JSP* this does not mean it can't be interactive/dynamic.
 Static sites are fast, svalable and can be more secure than typical dynamic sites. S3 provides security, durability, availability and scalability.
@@ -177,7 +179,7 @@ S3 has a URL it is easy to turn a bucket into a website. To host static website,
 
  7. The website will be available at your website domain name.
 
-##AWS S3 advanced features
+## AWS S3 advanced features
 
 Some s3 stuff you should be familiar with
 
@@ -197,9 +199,83 @@ The REST API, wrapper SDK, AWS CLI and the Amazon Management Console all support
 
 ASW S3 offers a range of *storage classes* suitable for various use cases.
 
-**S3** Standard offers high durability, hight availablity, low latency and high performance object storage for general purpose use. It delivers low first-byte latency and high throughput, Standard is well-suited for short-term storage of frequently accessed data. For general cases, S3 Standard is the place to start.
+**S3** Standard offers high durability, hight availability, low latency and high performance object storage for general purpose use. It delivers low first-byte latency and high throughput, Standard is well-suited for short-term storage of frequently accessed data. For general cases, S3 Standard is the place to start.
 
 **S3 Standard -Infrequent Access (Standard-IA)** offers the same durability, low latency, and high throughput as S3 standard, but is designed for long-lived, less frequently accessed data. **Standard-IA** has a lower per GB-month storage cost than Standard, but the price model also includes a minimum object size (128 KB), min duration of 30 days and per GB retrieval costs, so it is best suited for infrequently accessed data that is stored for longer than 30 days.
+
+
+**Amazon S3 Reduced Redundancy Storage ( RRS )** offers slightly lower durability ( 4 nines ? ) than Standard-IA at a reduced cost. It is most appropriate for derived data that can be easily reproduced, such as **image thumbnails**
+
+**Amazon Glacier** storage class offers secure, durable, and extremely low-cost cloud storage for data that does not require real-time access, such as archives and long-term backups. To keep costs low, Amazon Glacier is optimized for infrequently accessed data where a retrieval time of several hours is suitable. To retrieve an Amazon Glacier object, you issue a restore command using one of the Amazon S3 APIs. **3 - 5 hours later , the amazon glacier object is copied to AWS S3 RRS** The original data object remains in AWS glacier until explicitly deleted. Also **AWS Glacier allows you to retrieve up to 5% of the Amazon S3 data stored in Amazon Glacier for free each month**
+
+Glacier can also act as a storage tier in AWS S3, AWS Glacier is also a standalone storage service with a separate API and unique characteristics. However, when use Amazon Glacier as a storage class of Amazon S3, you can always interact with the data via AWS S3.
+
+Using S3 lifecycle configuration rules, you can significantly reduce your storage costs by automatically transitioning data from one storage class to another or even automatically deleting data after a period of time. e.g. the lifecycle rules for backup data might be:
+
+  * Store backup data initially AWS S3 standard
+
+  * After 30 days, transition to AWS Standard-I-A
+
+  * After 90 days, transition to Amazon Glacier.
+
+  * After 3 years, delete.
+
+Life Cycle configurations are attached to the bucket and can apply to all objects in the bucket or only to objects specified by a prefix.
+
+#
+
+## Encryption
+
+All sensitive data stored in AWS S3 be encrypted, both in storage and in the pipeline.
+
+To encrypt S3 data at rest, you can use several variations of **Server-Side Encryption (SSE)**. Amazon S3 encrypts your data at the object level as it writes it to disks  in its data centers and decrypts it for you when you access it. All SSE performed by Amazon S3 and AWS Key Management Service  ( Amazon KMS ) uses the 256-bit Advanced Encryption Standard (AES )You can also encrypt your s3 data at rest using **Client-Side Encryption** encrypting your data on the client before sending it to S3.
+
+## SSE-S3 (AWS-Managed Keys)
+
+This is a fully integrated checkbox style encryption solution where AWS handles the key management and key protection for S3. Every object is encrypted with a unique key. **The actual object key itself is then further encrypted by a separate master key**. A new master key is issued at least monthly, with AWS rotating the keys.  All these keys of which include Encrypted Data, encryption keys, and master keys are stored separately on secure hosts. This further enhances security.
+
+## SSE-S3 (AWS-Managed Keys)
+
+This is a fully integrated solution where Amazon handles your key management and protection for S3, but where you manage the keys. SSE-KMS offers several additional benefits compared to SSE-S3. Using SSE-KMS, there are separate permissions for using the master key, which provide protection against unauthorized access to your objects stored in S3 and an additional layer of control. AWS KMS also provides auditing, so you can see who used your key and when they tried to access the object. AWS KMS also allows you to view any failed attempts to access data from users who did not have permission to decrypt the data.
+
+## SSE-C ( Customer provided Keys )
+
+This is used when you wish to manage your own keys but do not want to manage or implement your own client-side encryption library. With SSE-C, AWS will do the encryption/decryption of your objects while you maintain full control of the keys used to encrypt/decrypt the objects in S2.
+
+## Client-Side Encryption
+
+Client-side encryption refers to encrypting data on the client side of your application before sending to S3. THe two options available are:
+
+    * Use an AWS-KMS-managed customer master key,
+
+    * Use a client-side master key.
+
+**When using client-side encryption, you retain end-to-end control of the encryption process. This includes the management of the encryption keys**.
+
+
+    For max simplicity and ease of use, user server-side encryption with AWS-managed keys (SSE-S3 or SSE-KMS)
+
+
+## Versioning
+
+S3 versioning protects data against accidental deletion, basically a backup, GIT-like, keeping multiple versions of the object in the bucket, identify by a unique version ID. Versioning allows you to preserve, retrieve and restore every version of every object stored in your AWS S3. If a user makes an accidental change or maliciously deletes an object in your S3 bucket, you can restore the object to its original state by referencing the version ID in addition to the bucket and object key. **Versioning can not be turned off, it is activated at the bucket level, it can only be suspended**
+
+## MFA Delete
+
+Adds another layer of data protection on top of bucket versioning. MFA delete requires additional authentication in order to permanently delete an object version or change the versioning state of a bucket. You will need your normal security credentials, MFA requires an authentication code ( or temporary, one time password ) generated by a hardware or virtual Multi-Factor Authentication or **MFA** device. **MFA delete can only be enabled by ROOT**
+
+## Pre-Signed URLs
+
+**All S3 objects by default are private** meaning that only the owner has access. However, the object owner can optionally share objects with other by creating a *pre-signed URL*, using their own security credentials to grant time-limited persmission to download the objects. When you create a pre-signed URL for your object, you must provide your security credentials to grant time-limited permission to download the objects. To create **pre-signed URL you must provide security credentials and specifiy a bucket name, an object key, the HTTP method ( GET to download the object ) and an expiration data and time. The pres-signed URLs are valid only for the specified duration. This is particulary useful to protect against "content scrapping" of web content such as media files stored in AWS S3 URLs are valid only for a specified duration.** YOU must provide a time duration to the user who wishes to access the S3, you will do this by using their own security credentials.
+
+## Multipart Upload
+
+To better support uploading or copying of large objects,
+
+
+
+
+
 
 
 
