@@ -274,10 +274,40 @@ S3 provides **Multi Upload API** for supporting uploading or copying of large ob
 
 **YOU should use MU when uploading objects larger than 100 Mbytes, you must use multipart upload for objects larger than 5GB.** When using the low-level APIs, you must break the file to be uploaded into parts and keep track of the parts. But when using the low-level APIs, you must break the file to be uploaded into parts and keep track of the parts. When using the high-level APIs and the high level- Amazon S3 commands in the AWS CLI ( aws s3 cp, aws, s3, mv, aws s3 sync) multipart upload is automatically performed for large objects.
 
-
     You can set an object lifecycle policy on a bucket to abort incomplete multipart
     uploads after a specified number of days. This will minimize the storage costs
     associated with multipart uploads that were not completed.
+
+## Range GETS
+
+You can use **Range GET** which allows you to download only a portion of an object in both S3 and glacier. Using Range HTTP header in the GET request or equivalent parameter in one the SDK wrapper libs, you specify a range of the object. THis is useful for dealing with large objects when you(the end user) has poor connection or you only need to download a "known portion of a large Amazon Glacier Backup."
+
+## Cross-Regional Replication
+
+*Cross-Regional replication* is An S3 feature. It allows you to asynch replicate all new objects in the source bucket in one AWS region to target bucket in another region. Any metadata and ACLS associated with the object are also part of the replication. You setup a cross-regional replication on your source bucket, any changes to the data, metadata, or ACLs on object trigger a new replication to the destination bucket. To enable cross-region replication, versioning must be turned on for both source and destination buckets. **You must use an IAM policy to give AWS S3 permission to replicate objects on your behalf**.
+
+**Cross regional replication** is commonly used to reduce the latency required to access objects in AWS S3 by placing objects closer to a set of users or to meet requirements to store backup data at a certain distance from the original source data.
+
+    If turned on in an existing bucket, cross-region replication will only
+    replication new objects. Existing objects will NOT be replicated and
+    must be copied to the new bucket by a separate command.
+
+## Logging
+
+For tracking requests to your S3 bucket, you can also enable S3 server access logs.**Logging is OFF by default**.
+but can be easily enabled. The source bucket is where you will log from, the target is where your logs will be stored. You can store access logs in the same bucket or in a different bucket. It is optional, either way.
+
+    It is a best practice to specify a prefix, such as logs/ or yourbucketname/logs/, so
+    that you can more easily find ( identify )your logs.
+
+
+
+
+
+
+
+
+
 
 
 
