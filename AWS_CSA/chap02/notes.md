@@ -121,7 +121,7 @@ Although namespace for **AWS S3 is global** , each S3 bucket is created in a spe
   Durability addresses the question, "Will my data still be there in the future?"
   Availability addresses the question, "Can I access my data right now?" S3 provides both very high durability and very high availability for your data.
 
-Amazon S3 standard storage is designed for 99.999~ durability and 99.99% of availability of objects over a given year. The odds of storing 10k objects with S3 servers expect to lose about a single object every 10 million years. S3 is achieves high durability by automatically storing data redundantly on multiple decices in multiple facilities within a region. **it is designed to sustain the loss of data in two facilities without loss of user data.** Amazon S3 provides a highly durable storage infrastructure designed for mission critical and primary data storage.
+**Amazon S3 standard storage is designed for 99.999~ durability and 99.99% of availability of objects over a given year. The odds of storing 10k objects with S3 servers expect to lose about a single object every 10 million years**. S3 is achieves high durability by automatically storing data redundantly on multiple decices in multiple facilities within a region. **it is designed to sustain the loss of data in two facilities without loss of user data.** Amazon S3 provides a highly durable storage infrastructure designed for mission critical and primary data storage.
 
      S3 storage offers very high durability at the infrastructure level, it is still a best practice
      to proectec against user-level accidental deletion or overwriting of data by using additional
@@ -270,7 +270,111 @@ Adds another layer of data protection on top of bucket versioning. MFA delete re
 
 ## Multipart Upload
 
-To better support uploading or copying of large objects,
+S3 provides **Multi Upload API** for supporting uploading or copying of large objects. By piecewise uploads you will be able to take advantage of parallel uploading and save time, and better network utilization. S3 then assembles the parts in order to create an object.
+
+**YOU should use MU when uploading objects larger than 100 Mbytes, you must use multipart upload for objects larger than 5GB.** When using the low-level APIs, you must break the file to be uploaded into parts and keep track of the parts. But when using the low-level APIs, you must break the file to be uploaded into parts and keep track of the parts. When using the high-level APIs and the high level- Amazon S3 commands in the AWS CLI ( aws s3 cp, aws, s3, mv, aws s3 sync) multipart upload is automatically performed for large objects.
+
+    You can set an object lifecycle policy on a bucket to abort incomplete multipart
+    uploads after a specified number of days. This will minimize the storage costs
+    associated with multipart uploads that were not completed.
+
+## Range GETS
+
+You can use **Range GET** which allows you to download only a portion of an object in both S3 and glacier. Using Range HTTP header in the GET request or equivalent parameter in one the SDK wrapper libs, you specify a range of the object. THis is useful for dealing with large objects when you(the end user) has poor connection or you only need to download a "known portion of a large Amazon Glacier Backup."
+
+## Cross-Regional Replication
+
+*Cross-Regional replication* is An S3 feature. It allows you to asynch replicate all new objects in the source bucket in one AWS region to target bucket in another region. Any metadata and ACLS associated with the object are also part of the replication. You setup a cross-regional replication on your source bucket, any changes to the data, metadata, or ACLs on object trigger a new replication to the destination bucket. To enable cross-region replication, versioning must be turned on for both source and destination buckets. **You must use an IAM policy to give AWS S3 permission to replicate objects on your behalf**.
+
+**Cross regional replication** is commonly used to reduce the latency required to access objects in AWS S3 by placing objects closer to a set of users or to meet requirements to store backup data at a certain distance from the original source data.
+
+    If turned on in an existing bucket, cross-region replication will only
+    replication new objects. Existing objects will NOT be replicated and
+    must be copied to the new bucket by a separate command.
+
+## Logging
+
+For tracking requests to your S3 bucket, you can also enable S3 server access logs.**Logging is OFF by default**.
+but can be easily enabled. The source bucket is where you will log from, the target is where your logs will be stored. You can store access logs in the same bucket or in a different bucket. It is optional, either way.
+
+    It is a best practice to specify a prefix, such as logs/ or yourbucketname/logs/, so
+    that you can more easily find ( identify )your logs.
+
+Logs are delivered on a best-effort with a slight delay. Logs include information such as:
+
+    * Requestor account and IP address
+
+    * Bucket name
+
+    * Request time
+
+    * Action ( GET, PUT, LIST, and so forth )
+
+    * Response status or error code
+
+## Event Notifications
+
+S3 event notifications can be sent in response to actions taken on objects ( **reactive** ) in response to actions taken on objects uploaded or stored in S3. Event notifications enable you to run workflows, send alerts, or perform other actions in response to changes in your objects in S3. Use S3 event notifications to set up triggers to perform actions, such as transcoding media files when they are uploaded, processing data files when they become available, and sync amazon s3 objects with other data stores.
+
+## Best Practices, Patterns and Performance
+
+It is common pattern to use S3 storage in hybrid IT environments and applications. e.g. **data in on-premises, databases and compliance archives can be easily be backed over the Internat to Amazon S3 or Amazon Glaciers, while the primary application or database storage remains on-premises**.
+
+**Another common pattern is to use S3 for bulk "blob" storage for data, while keeping an index to that data in another service, such as DynamoDB or Amazon RDS. This allows quick searches and complex queries on key names without listing keys continually**.
+
+S3 will scale automatically to support very high request rates, automatically re-partioning buckets as needed. **If requests higher than 100 requests per second -- view Amazon S3 best practices guidelines in the Developer Guide**.
+
+    To ensure higher request rates, use some level of random distribution of keys,
+    e.g using hash as a prefix to key names.
+
+    If using S3 in a GET-intensive mode such as a static website hosting, for
+    best performance use an Amazon CloudFront distribution as a caching layer
+    in front of the S3 bucket.
+
+# Amazon Glacier
+
+Glacier is an extremely low-cost storage service that provides durable, secure and flexible storage for data arching and online backup. Designed for infrequent access where retrieval time of 3 to 5 hours is expected.
+Glacier can store virtually any type of data, in any format. Like the old tapes of yesteryear. TAR, or ZIP
+
+Glacier is as durable storing data on multiple devices across multiple facilities in a region. is designed for 99.9999999~% durabilty of objects over a given year.
+
+## Archives
+
+In Glacier, data is stored in **archives*. An archive can contain up to **40TB**. You can use an unlimited amount of archives. Archives are automatically encrypted and archives are immutable --after an archive is created, it cannot be modified.
+
+## Vaults
+
+**Vaults** are containers for archives. An AWS account can store up to 1,000 vaults. Control to the vaults is provisioned by IAM policies. **Identity and Access Management** or **Vault Access Policies**.
+
+## Vault Locks
+
+Use Vault locks to deploy and enforce compliance controls for individual Amazon Glacier vaults with a **vault lock policy**. To specify controls such as **Write Once Read Many** **WORM** in a vault policy and lock the policy from future edits. __Once locked, the policy can no longer be changed__
+
+## Data Retrieval
+
+Only 5% of data for retrieval is free for each month. So if you store 100 GB of data, only 5 GB will be free per month. If you retrieve more than the 5% you will incur fees. To limit fees you can set data retrieval policy limit through vault or limit your retrievals to a free tier or to a specified data rate.
+
+# Glacier vs Simple Storage ( S3 )
+
+Glacier is similar to S3, But the differences are in key aspects. **Glacier supports 40TB archives, S3 only 5TB objects**. Glacier archives are identified by system-generated archive IDs, while S3 lets you use "friendly" key names. **Glacier archives are automatically encrypted, S3  encryption is optional**. Using Glacier  as an S3 storage class together with lifecycle policies, you use the S3 interface to get most of the benefits of Amazon Glacier without learning a new interface.
+
+---> Next Lab for Chap02
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
