@@ -352,6 +352,14 @@ Use Vault locks to deploy and enforce compliance controls for individual Amazon 
 
 ## Data Retrieval
 
+Only 5% of data for retrieval is free for each month. So if you store 100 GB of data, only 5 GB will be free per month. If you retrieve more than the 5% you will incur fees. To limit fees you can set data retrieval policy limit through vault or limit your retrievals to a free tier or to a specified data rate.
+
+# Glacier vs Simple Storage ( S3 )
+
+Glacier is similar to S3, But the differences are in key aspects. **Glacier supports 40TB archives, S3 only 5TB objects**. Glacier archives are identified by system-generated archive IDs, while S3 lets you use "friendly" key names. **Glacier archives are automatically encrypted, S3  encryption is optional**. Using Glacier  as an S3 storage class together with lifecycle policies, you use the S3 interface to get most of the benefits of Amazon Glacier without learning a new interface.
+
+---> Next Lab for Chap02
+
 
 
 
