@@ -92,6 +92,35 @@ The instances type defines the virtual hadrware supporting an EC2 instance. Ther
 In response to customer demand and to take advantage of new processor technology, AWS occasionally introduces new instance families.
 ## CHECK AWS SITE FOR NEW INSTANCE FAMILIES
 
-**it is also important to consider network performance** Many instance types support enhanced networking. Enhanced
+**it is also important to consider network performance** Many instance types support enhanced networking. Enhanced networking reduces the impact of virtualization on networking performance by enabling a capability called **Single Root I/O** Virtualization (SR-IOV). This results in more **More packets per Second (PPS), lower latency and less jitter**. So far instance types that are supported enhanced networking in **C3, C4, D2, I2, M4, and R3** families
+
+Enabling enhanced networking on an instance involves ensuring the correct drivers are installed and modifying an instance attribute. Enhanced networking is available only for instances launched in AWS Virtual Cloud ( Amazon VPC )
+
+## Amazon Machine Images (AMIS)
+
+The AMI *Amazon Machine Images* defines the initial software that will be on an instance when it is lanuched. An AMI defines every aspect of the software state at instance launch, inlcuding:
+
+	* The OS and its configuration
+
+	* The Initial stale of any patches
+
+	* Application or system software
+
+# All AMIs are based on x86 OS - Linux Windows
+
+**There are four sources of AMIs:**
+
+	* Published by AWS :
+
+	* The AWS MarketPlace
+
+	* Generated From existing Instances
+
+	* Uploaded Virtual Servers
+
+
+**Published By AWS** AWS publishes AMIs with versions of many different OSs, in Linux and Windows.
+
+
 
 
