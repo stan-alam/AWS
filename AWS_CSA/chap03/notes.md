@@ -54,7 +54,7 @@ Included content :
 
 **How to protect your data on EBS**
 
-##Amazon Elastic Compute Cloud ( EC2 )
+## Amazon Elastic Compute Cloud ( EC2 )
 
 EC2 is AWS primary web service that provides realizable compute capacity in the cloud.
 
@@ -68,7 +68,7 @@ EC2 allows you to acquire compute through the launching of virtual servers, call
 
 **Instances Types**
 
-The instances type defines the virtual hadrware supporting an EC2 instance. There are dozens of instance types available, varying in the following dimensions.
+The instances type defines the virtual hardware supporting an EC2 instance. There are dozens of instance types available, varying in the following dimensions.
 
  * Virtual CPU ( vCPUS)
 
@@ -98,7 +98,7 @@ Enabling enhanced networking on an instance involves ensuring the correct driver
 
 ## Amazon Machine Images (AMIS)
 
-The AMI *Amazon Machine Images* defines the initial software that will be on an instance when it is lanuched. An AMI defines every aspect of the software state at instance launch, inlcuding:
+The AMI *Amazon Machine Images* defines the initial software that will be on an instance when it is lanuched. An AMI defines every aspect of the software state at instance launch, including:
 
 	* The OS and its configuration
 
@@ -119,7 +119,15 @@ The AMI *Amazon Machine Images* defines the initial software that will be on an 
 	* Uploaded Virtual Servers
 
 
-**Published By AWS** AWS publishes AMIs with versions of many different OSs, in Linux and Windows.
+**Published By AWS** AWS publishes AMIs with versions of many different OSs, in Linux and Windows.This includes the cardinal Linux distros, Ubuntu/Debian, Red Hat, and **Amazon has its own distro** also a windows 2008, and 2012. Launching an instance based on one of these AMIs will result in the default OS settings, that is similar to installing an OS from the standard OS ISO image.
+
+**The AWS MarketPlace** AWS marketplace is an online store that helps customers find, buy and immediatly start using the software and services that run on AWS EC2. Many AWS partners have made their software available in the AWS marketplace. **This provides two benefits**: The customer does naot need to install the software, and the license agreement is appropriate software ( some open-source AWS MarketPlace packages have no additional software charge ).
+
+**Generated From existing Instances** - An AMI can be created from an existing EC2 instances. THis is a very common source of AMIs. Customers launch an instance from a published AMI, and then the instance is configured to meet all the customers' corperate standards for updates, management-- and it is more difficult for individual projects to launch non-conforming instances.
+
+**Uploaded Virtual Servers** Using AWS VM import/Export service, customers can create images from various virtualization formates, including raw, **VHD, VMDK, OVA**. THe current list of supported OS( Linux and WIndows ) can be found in the AWS docs. It is incumbent on the customers to remain complaint with the terms of their OS vendor.
+
+
 
 
 
