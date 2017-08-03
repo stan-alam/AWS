@@ -249,6 +249,9 @@ public class HelloMultiverse {
 
   * Eventually consistency for overwrite PUTS and DELETES, takes time to propagate
 
+
+______________________________________________________________________________________
+
   * S3 - Object based
 
   * **Objects consist of:**
@@ -264,10 +267,64 @@ public class HelloMultiverse {
 
     **Access Control Lists(ACLs)**
 
+    **99.99% availability**
+
+    **99.999999999% durability**
+
+    **Tiered storage**
+
+    **LifeCycle management**
+      can be used in conjunction with versioning
+      can be applied to both current and previous versions
+      **Actions** :
+          Transition to S3-IA (128Kb and 30 days after creation)
+          Archive to Glacier ( 30 days after S3-IA, if relevant)
+
+  **Encryption ACLs and Bucket Policies**
+
+  **Storage Tiers**
+
+        **S3**
+        99.99% availability
+        99.999999999% durability
+        Redundant, designed to sustain loss of 2 facilities concurrently
+
+        **S3-IA (infrequently accessed)**
+        99.9% availability
+        99.999999999% durability
+        Lower fee than S3, but charged a retrieval fee
+
+        **S3-RRS (Reduced Redundancy Storage)**
+        99.99% availability
+        99.99% durability
+
+        **Glacier**
+        Very cheap (as little as $0.01 GB/mo.)
+        Used for archive only
+        Takes 3-5 hours to restore from Glacier
 
 
+Versioning
+      
+      Stores all versions of an object (including all writes and deletes)
+      
+      Great backup tool
+      
+      Cannot disable versioning once enabled, but you can suspend
+      
+      Integrates with lifecycle rules
+      
+      Can use MFA delete capability, so that you can’t delete without MFA
+      
+      Cross Region Replication requires versioning – only applies to files manipulated *after* CRR is turned on
+
+      Can take up a LOT of space on files that change a lot (because it stores each changed version)
 
 
+_________________________________________________________________________________________________________________
 
+# S3 - Security and Encryption 
+
+            
 
 
