@@ -123,7 +123,7 @@ The AMI *Amazon Machine Images* defines the initial software that will be on an 
 
 **The AWS MarketPlace** AWS marketplace is an online store that helps customers find, buy and immediatly start using the software and services that run on AWS EC2. Many AWS partners have made their software available in the AWS marketplace. **This provides two benefits**: The customer does naot need to install the software, and the license agreement is appropriate software ( some open-source AWS MarketPlace packages have no additional software charge ).
 
-**Generated From existing Instances** - An AMI can be created from an existing EC2 instances. THis is a very common source of AMIs. Customers launch an instance from a published AMI, and then the instance is configured to meet all the customers' corperate standards for updates, management-- and it is more difficult for individual projects to launch non-conforming instances.
+**Generated From existing Instances** - An AMI can be created from an existing EC2 instances. THis is a very common source of AMIs. Customers launch an instance from a published AMI, and then the instance is configured to meet all the customers' corporate standards for updates, management-- and it is more difficult for individual projects to launch non-conforming instances.
 
 **Uploaded Virtual Servers** Using AWS VM import/Export service, customers can create images from various virtualization formates, including raw, **VHD, VMDK, OVA**. THe current list of supported OS( Linux and WIndows ) can be found in the AWS docs. It is incumbent on the customers to remain complaint with the terms of their OS vendor.
 
