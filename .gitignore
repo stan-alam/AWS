@@ -1,0 +1,4 @@
+node_modules
+npm-debug.log*
+/SaAWS/node_modules
+.env
