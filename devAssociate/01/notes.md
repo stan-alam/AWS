@@ -1,11 +1,5 @@
 # AWS Private Cloud
-/play trololo
 
-cloud storage, and falling compute/storage prices, all contribute to the
-spurt of Big Data in recent years. A few studies reveal that we produce as much data every 15
-minutes, as was created from the beginning of the time, to the year 2003. This roughly coincides with
-the mobility/cloud usage proliferation.
-Big data is not only about massive data capture
 **What is a computer network and how does it relate to the VPC (who is your daddy and what does he do? - Arnold )**
 
 A computer network is basically two or more computers interconnected for sharing resources and communicating between each other.
