@@ -1,6 +1,5 @@
 ## Going Serverless
 
-
      Serverless is a misnomer. Where you use a compute service such as AWS Lambda to execute code or interact
      with an API, there are still servers in the background. The difference is that these servers are hidden.
      There is no infrastructure for the developer to think about. No way to tweak the underlying OS. Someone
@@ -35,7 +34,7 @@ Think of Microservices and serverless architectures as spiritual descendants of 
 
 SA does adopts some of the mantras of microservices, i.e for example, one can consider each function to be its own standalone service, with its own business purpose.
 
-## Serviceless architecture gives the developer freedom to apply as few or as many microservices principles without forcing him/her to a single path.
+## Serverless architecture gives the developer freedom to apply as few or as many microservices principles without forcing him/her to a single path.
 
 One of the solutions that SA tries to alleviate is the complexity arising from too many abstractions. Although layering allows developers to decouple concerns and have more maintainable applications. The converse is also true. **Too many moving parts** can lead to inefficiencies. **A small change can often cascade and cause the developer to modify every layer throughout the system** costing a lot of time and expenditure. The more layers there are the more complex and unwieldy the system might become over time.
 
@@ -61,7 +60,7 @@ It can also make future changes easier for a long term application.
      multiple layers within it responsible for different elements of functionality such as domain services.
 
 
-#Five Principles of Serverless Architectures
+# Five Principles of Serverless Architectures
 
 
    1. **Use a compute service to execute code on demand ( no servers )**
@@ -70,7 +69,7 @@ It can also make future changes easier for a long term application.
    4. **Create thicker, more powerful front ends**
    5. **Embrace third-party services**
 
-#1.SA is a natural extension of ideas raised in SOA
+# 1.SA is a natural extension of ideas raised in SOA
 
   Developers can write functions to carryout almost any common task, such as reading and writing to a data source, calling other functions, and performing a calculation.
 
@@ -84,7 +83,7 @@ It can also make future changes easier for a long term application.
 
 **MS AZURE, IBM Bluemix OpenWhisk, Google Cloud Functions are other compute services that compete with AWS lambda**
 
-#2.Single-purpose stateless functions
+# 2.Single-purpose stateless functions
 
    A good practice is to write functions with the **Single Responsibility Principle** ( SRP ) **A function that does just one thing is more testable, robust and leads to fewer bugs and unexpected side effects** By composing functions and services together in a loose orchestration, a developer can build complex back end systems that are still understandable and easy to manage. **A granular function with well-defined interface is also more likely to be re-used within an SA**
    **All code written in Lambda must be stateless**
@@ -92,24 +91,8 @@ It can also make future changes easier for a long term application.
 **Stateless allows for scalability** quickly scale to handle an ever-changing number of incoming events or requests.
 
 
-#3. Design Push-based, Event-driven pipelines
+# 3. Design Push-based, Event-driven pipelines
 
    Systems can be built from scratch or monolithic systems can be re-engineered to take advantage of SA.
    **Event-Drive, Push-based pipeline to show how quickly a system can be put together, e.g. to encode video to different bitrates and formats**. This can be achieved by connecting to **Amazon's Simple Storage ( S3 ), Lambda and Elastic transcoder**.
    **One of the advantages of building an event-driven, push-based system is that it will reduce cost and complexity ( a developer will not need to run extra code to poll for changes) and make UX smoother. event-driven, push-based may not be applicable to all circumstances. At times a lambda function may need to be implemented that polls the event source or runs on a schedule.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
