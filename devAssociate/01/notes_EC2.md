@@ -193,4 +193,4 @@ resolving hardware related issues on an instance.
 # Instance Reboot
 
 An ec2 instance can be rebooted in various ways. i.e. you can use the AWS console, or AWS-cli, AWS API,, or you can restart the instance directly from the operating system.
-**Rebooting is equivalent 
+**Rebooting is equivalent
