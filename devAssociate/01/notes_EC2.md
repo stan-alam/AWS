@@ -1,4 +1,4 @@
-# EC2
+# EC2 - Elastic Compute Cloud
 
 EC2 is a compute service that provides an on-demand and scalable computing service on the cloud.
 It eliminates the need for upfront investment on hardware with *pay as you go* model. Like a utility.
@@ -13,6 +13,10 @@ It eliminates the need for upfront investment on hardware with *pay as you go* m
 **The AMI or Amazon Machine Image are preconfigured templates, which include base operating
 systems and any additional software in a single package**
 
+**You can create new instances based on AMI**
+
+**
+
 **The AMI provides a combination of CPU, memory, storage and networking capacity for provisioning instances.
 These combinations are called instance types**
 
@@ -26,7 +30,16 @@ instance and a private is provided to the provisioning user. A key pair is used 
 
 **All data is lost at the instance storage is terminated, stopped or restarted.**
 
-**Amazon provides multiple physical locations for provisioning ec2 instances**
+**EBS is the storage provided to EC2 by AWS**
+
+**Amazon provides multiple physical locations for provisioning ec2 instances which are known as AZs**
+
+**Az's provide a firewall to your instances using security groups**
+
+**Elastic IP is a static IPv4 address which is provided by AWS**
+
+**Using tags on Ec2 allows you to track various ec2 instances by allowing you to assign a tag to a specific instance. You can name the tag as an environment, department,
+cost center ..etc
 
 ## AZ's
 //todo
@@ -112,7 +125,7 @@ the remaining amount is paid on a monthly basis.
 
 ## When to use Reserved instances :
 
-  * WHen you need to run a predictable and consistent workflow for a long persiod
+  * When you need to run a predictable and consistent workflow for a long persiod
 
   * All applications require steady state infrastructure
 
@@ -193,4 +206,34 @@ resolving hardware related issues on an instance.
 # Instance Reboot
 
 An ec2 instance can be rebooted in various ways. i.e. you can use the AWS console, or AWS-cli, AWS API,, or you can restart the instance directly from the operating system.
-**Rebooting is equivalent
+**Rebooting is equivalent to rebooting the OS** When an instance reboots, it remains on the same host computer in the virtualized environment. **It retains its IP and public DNS
+name.** It also retains the data on that instance store.
+
+## Unlike stopping and starting an instance, rebooting does not initiate a new billing hour.
+
+# Instance retirement
+
+When there is a serious irreparable issue in underlying hardware where an instance is hosted... **AWS schedules the instance for retirement** The instance is automatically stopped
+and/or **terminated by AWS as it reaches its retirement mark**
+
+If your instance is an EBS backed instance, you can stop and start the instance. **Stopping and starting the instance automatically changes the underlying host and you can continue
+using the instance. If the instance has a root volume with an instance-store-based volume, the instance gets terminated and it will not be usable again**
+
+# Instance termination
+
+If you don't need an instance you can terminate it. **AWS does not charge once the ec2 instance has been terminated -- this means right when the status of the ec2 changes from
+shutting down to terminated**
+
+**Termination protection** allows you to disable termination by accident. Using the tag, you will have to disable the termination protection tag before you can terminate.
+
+Once the ec2 instance is terminated you cannot recover, the ec2 instance will still be displayed in the console in a terminated state. Unless you have not backed up your ec2, then
+the ec2 that is terminated is unrecoverable.
+
+## InstanceInitiatedShutdownBehavior
+
+          "Every EC2 instance with EBS-backed volume, supports an attribute that controls it behavior"
+          This is attribute is called InstanceInitiatedShutdownBehavior. You can configure how the EC2
+          will behave at shutdown, when you're bringing the ec2 instance up. You can select to stop the
+          instance on shutdown or terminate it.
+
+**The default behavior of an EC2 instance is STOP on shutdown.**
