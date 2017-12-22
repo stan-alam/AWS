@@ -36,7 +36,7 @@ public class HelloMultiverse {
 
 **Metered Billing** : Per-usage business model; pay only for what you use
 
-#EC2 Instance Types:
+# EC2 Instance Types:
 
 | Family 	| Specialty                      	|                      Use Case                     	|
 |--------	|-------------------------------	|:-------------------------------------------------:	|
