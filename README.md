@@ -28,6 +28,33 @@
   <img src="https://github.com/stan-alam/AWS/blob/develop/AWS_CSA/chap01/svg_files/aws-6.svg" width="80%" height="80%">
 </a>
 
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/AWS_CSA/chap01/svg_files/aws-7.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/AWS_CSA/chap01/svg_files/aws-8.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/AWS_CSA/chap01/svg_files/aws-9.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/AWS_CSA/chap01/svg_files/aws-10.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/AWS_CSA/chap01/svg_files/aws-11.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/AWS_CSA/chap01/svg_files/aws-12.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/AWS_CSA/chap01/svg_files/aws-13.svg" width="80%" height="80%">
+</a>
 
 ## Five Main principles that define cloud computing
 
