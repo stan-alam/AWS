@@ -75,3 +75,15 @@
 <a>
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/Notebook-28.svg" width="80%" height="80%">
 </a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/18.09.24/Notebook-1.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/18.09.24/Notebook-2.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/18.09.24/Notebook-3.svg" width="80%" height="80%">
+</a
