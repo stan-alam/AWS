@@ -147,7 +147,9 @@
 <a>
   <img src="https://github.com/stan-alam/AWS/blob/develop/AWS_CSA/chap01/svg_files/aws-13.svg" width="80%" height="80%">
 </a>
-**09.25.2018**
+
+09.25.2018
+
 <a>
   <img src="https://github.com/stan-alam/AWS/blob/develop/AWS_CSA/chap01/svg_files/925/Notebook-4.svg" width="80%" height="80%">
 </a>
