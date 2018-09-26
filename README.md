@@ -398,7 +398,7 @@ ________________________________________________________________________________
 
     **Version ID** (for versioning)
 
-    **Metadaa(tags)**
+    **Metadata(tags)**
 
     **Subsresources**
 
