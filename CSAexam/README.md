@@ -179,3 +179,35 @@
 <a>
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/18.09.28/Notebook-30.svg" width="80%" height="80%">
 </a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/18.09.28/Notebook-31.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/18.09.28/Notebook-32.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/18.09.28/Notebook-33.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/18.09.28/Notebook-34.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/18.09.28/Notebook-35.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/18.09.28/Notebook-36.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/18.09.28/Notebook-37.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/01/svg_files/18.09.28/Notebook-38.svg" width="80%" height="80%">
+</a
