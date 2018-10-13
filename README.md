@@ -290,6 +290,42 @@
 </a
 
 
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-58.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-59.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-60.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-61.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-62.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-63.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-64.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-65.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-66.svg" width="80%" height="80%">
+</a
+
 # Study guide
 
 <a>
