@@ -289,7 +289,6 @@
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-57.svg" width="80%" height="80%">
 </a
 
-
 <a>
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-58.svg" width="80%" height="80%">
 </a
@@ -336,6 +335,18 @@
 
 <a>
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-69.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-70.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-71.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-72.svg" width="80%" height="80%">
 </a
 
 # Study guide
