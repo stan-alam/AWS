@@ -2,5 +2,5 @@
 
 **I created this early tool for performance testing our first successful deployment of microservices**
 <p align="center">
-![](https://github.com/stan-alam/AWS/blob/develop/scripts/gif_files/mayaBee.gif)
+  <img src="https://github.com/stan-alam/AWS/blob/develop/scripts/gif_files/mayaBee.gif" width="110%" height="110%">
 </p>
