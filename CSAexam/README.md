@@ -435,3 +435,19 @@
 <a>
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-94.svg" width="80%" height="80%">
 </a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-95.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-96.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-97.svg" width="80%" height="80%">
+</a
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-98.svg" width="80%" height="80%">
+</a
