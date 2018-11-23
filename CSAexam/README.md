@@ -457,5 +457,5 @@
 </a
 
 <a>
-  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/gif_files/clippy5000g.gif" width="80%" height="80%">
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/gif_files/clippy5000g.gif" width="65%" height="65%">
 </a
