@@ -456,6 +456,6 @@
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-100.svg" width="80%" height="80%">
 </a
 
-<a>
+<p align="center">
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/gif_files/clippy5000g.gif" width="65%" height="65%">
-</a
+</p>
