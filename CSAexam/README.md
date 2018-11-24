@@ -461,5 +461,5 @@
 </a
 
 <p align="center">
-  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/gif_files/clippy5000g.gif" width="55%" height="55%">
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/gif_files/clippy5000g.gif" width="50%" height="50%">
 </p>
