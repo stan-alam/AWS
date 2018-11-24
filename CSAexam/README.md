@@ -457,7 +457,7 @@
 </a>
 
 <a>
-  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-100.svg" width="35%" height="35">
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-100.svg" width="35%" height="35%">
 </a>
 
 <p align="center">
