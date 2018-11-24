@@ -453,9 +453,13 @@
 </a
 
 <a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-999.svg" width="80%" height="80%">
+</a
+
+<a>
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/Notebook-100.svg" width="80%" height="80%">
 </a
 
 <p align="center">
-  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/gif_files/clippy5000g.gif" width="65%" height="65%">
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/gif_files/clippy5000g.gif" width="55%" height="55%">
 </p>
