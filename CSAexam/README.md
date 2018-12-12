@@ -475,3 +475,15 @@
 <a>
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-2.svg" width="80%" height="80%">
 </a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-3.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-4.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-5.svg" width="80%" height="80%">
+</a>
