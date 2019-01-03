@@ -490,6 +490,59 @@
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-5.svg" width="80%" height="80%">
 </a>
 
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-6.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-7.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-8.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-9.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-10.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-11.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-12.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-13.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-14.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-15.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-16.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-17.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/awsCSA-18.svg" width="80%" height="80%">
+</a>
+
+
 # Study guide
 
 <a>
