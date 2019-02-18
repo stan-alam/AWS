@@ -635,3 +635,13 @@
 <a>
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/svg_files/csaExam-41.svg" width="80%" height="80%">
 </a>
+
+## 03 VPC
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2043.png" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2044.png" width="80%" height="80%">
+</a>
