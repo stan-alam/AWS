@@ -657,7 +657,7 @@
 </a>
 
 <a>
-  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2046a.png" width="80%" height="80%">
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2046.png" width="80%" height="80%">
 </a>
 
 # Study guide
