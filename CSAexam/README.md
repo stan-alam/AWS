@@ -697,3 +697,19 @@
 <a>
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2056.png" width="80%" height="80%">
 </a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2057.png" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2058.png" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2059.png" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2060.png" width="80%" height="80%">
+</a>
