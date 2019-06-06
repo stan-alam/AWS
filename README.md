@@ -752,6 +752,22 @@
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2068.png" width="80%" height="80%">
 </a>
 
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2069.png" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2070.png" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2071.png" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2072.png" width="80%" height="80%">
+</a>
+
 # Study guide
 
 <a>
