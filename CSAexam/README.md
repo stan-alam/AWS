@@ -765,3 +765,30 @@
 <a>
   <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2072.png" width="80%" height="80%">
 </a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2073.png" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2074.png" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2075.png" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2076A.png" width="80%" height="80%">
+</a>
+
+```text
+// chart 96.A
+```
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2076B.png" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/AWS/blob/develop/CSAexam/02/03/images/csaExam%20-%2077.png" width="80%" height="80%">
+</a>
